@@ -350,8 +350,8 @@ def get_environment(name, filenames):
     basepath = os.environ[name]
     for f in filenames:
         if not os.path.exists(os.path.join(basepath, f)):
-            raise Exception("Environment variable {name} is set to {basepath},\n " +\
-                           "but {fullpath} does not exists.".format(name=name,
+            raise Exception(("Environment variable {name} is set to {basepath},\n " +\
+                           "but {fullpath} does not exists.").format(name=name,
                                                                     basepath=basepath,
                                                                     fullpath=os.path.join(basepath, f)))
     return basepath
