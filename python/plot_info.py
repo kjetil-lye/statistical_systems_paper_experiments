@@ -218,7 +218,7 @@ def savePlot(name):
                 for line in title.splitlines():
                     f.write("%% {}\n".format(line))
                 f.write("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n")
-
+                f.write("%% script name: {}".format(get_notebook_name()))
                 f.write("\n")
                 f.write("%% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT\n")
                 f.write("%% DO NOT REMOVE THE COMMENTS BELOW!\n")
@@ -253,7 +253,8 @@ def savePlot(name):
                                 **gitMetadata,
                                 "modules_loaded": get_loaded_python_modules_formatted(),
                                 "python_version": get_python_description(),
-                                'stacktrace': get_stacktrace_str()})
+                                'stacktrace': get_stacktrace_str(),
+                                'in_file' : get_notebook_name()})
 
     if savePlot.callback is not None:
         title = 'Unknown title'
@@ -337,20 +338,29 @@ def to_percent(y, position):
 def set_percentage_ticks(ax):
     """ ax is either plt.gca().xaxis or plt.gca().yaxis"""
     ax.set_major_formatter(matplotlib.ticker.FuncFormatter(to_percent))
-        
+
 def get_environment(name, filenames):
     """
-    Gets the environment variable "name" and checks that the 
+    Gets the environment variable "name" and checks that the
     folder os.environ[name]/filename exists for each filename in filenames
     """
     if name not in os.environ:
         raise Exception("Environment variable {name} not set.".format(name=name))
-    
+
     basepath = os.environ[name]
-    for f in filenames: 
+    for f in filenames:
         if not os.path.exists(os.path.join(basepath, f)):
             raise Exception("Environment variable {name} is set to {basepath},\n " +\
                            "but {fullpath} does not exists.".format(name=name,
-                                                                    basepath=basepath, 
+                                                                    basepath=basepath,
                                                                     fullpath=os.path.join(basepath, f)))
     return basepath
+
+
+def get_notebook_name():
+    return get_notebook_name.name
+
+get_notebook_name.name = sys.argv[0]
+
+def set_notebook_name(name):
+    get_notebook_name.name = name
