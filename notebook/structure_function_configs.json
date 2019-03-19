@@ -1,5 +1,16 @@
 {
     "daint": {
+        "name": "Kelvin-Helmholtz",
+        "Tarray": [
+            0,
+            1,
+            2
+        ],
+        "maxT": 4,
+        "perturbations": [
+            0.1,
+            0.01
+        ],
         "resolutions": [
             128,
             256,
@@ -20,6 +31,15 @@
         "basic_filename": "kh_daint/samples_kelvinhelmholtz_{perturbation}_{resolution}/kh_{direction}_structure_basic_{p}.000000_{t}.nc"
     },
     "brownian": {
+        "maxT": 0.2,
+        "name": "Brownian",
+        "Tarray": [
+            0,
+            1
+        ],
+        "perturbations": [
+            0.1
+        ],
         "resolutions": [
             64,
             128,
@@ -41,6 +61,12 @@
         "stat_filename": "euler_brownian/euler_brownian_{resolution}/brownianeuler_{stat}_{t}.nc"
     },
     "euler": {
+        "maxT": 2.0,
+        "name": "Kelvin-Helmholtz",
+        "Tarray": [
+            0,
+            1
+        ],
         "resolutions": [
             64,
             128,
@@ -73,6 +99,10 @@
     },
     "euler_gaussian": {
         "name": "Kelvin-Helmholtz with Gaussian perturbation",
+        "Tarray": [
+            0,
+            1
+        ],
         "resolutions": [
             64,
             128,
@@ -100,6 +130,11 @@
         "basic_filename": "kh_gaussian/kelvinhelmholtz_{perturbation}_{resolution}/kh_{direction}_structure_basic_{p}.000000_{t}.nc"
     },
     "richtmeyer": {
+        "maxT": 5,
+        "Tarray": [
+            0,
+            1
+        ],
         "resolutions": [
             64,
             128,
@@ -127,9 +162,16 @@
         "basic_filename": "richtmeyer_mc/richtmeyermeshkov_{perturbation}_{resolution}/rm_{direction}_structure_basic_{p}.000000_{t}.nc",
         "mean_filename": "richtmeyer_mc/richtmeyermeshkov_{perturbation}_{resolution}/rm_mean_{t}.nc",
         "variance_filename": "richtmeyer_mc/richtmeyermeshkov_{perturbation}_{resolution}/rm_variance_{t}.nc",
+        "name": "Richtmeyer-Meshkov",
         "stat_filename": "richtmeyer_mc/richtmeyermeshkov_{perturbation}_{resolution}/rm_{stat}_{t}.nc"
     },
     "fract075": {
+        "maxT": 0.2,
+        "Tarray": [
+            0,
+            8,
+            16
+        ],
         "resolutions": [
             64,
             128,
@@ -153,9 +195,30 @@
         "basic_filename": "euler_brownian_075/euler_brownian_{resolution}/brownianeuler_{direction}_structure_basic_{p}.000000_{t}.nc",
         "mean_filename": "euler_brownian_075/euler_brownian_{resolution}/brownianeuler_mean_{t}.nc",
         "variance_filename": "euler_brownian_075/euler_brownian_{resolution}/brownianeulervariance_{t}.nc",
+        "name='Fractional Brownian $H": "0.75$'",
         "stat_filename": "euler_brownian_075/euler_brownian_{resolution}/brownianeuler_{stat}_{t}.nc"
     },
     "fract005": {
+        "maxT": 4,
+        "Tarray": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+        ],
         "resolutions": [
             64,
             128,
@@ -179,9 +242,30 @@
         "basic_filename": "euler_brownian_005/euler_brownian_{resolution}/brownianeuler_{direction}_structure_basic_{p}.000000_{t}.nc",
         "mean_filename": "euler_brownian_005/euler_brownian_{resolution}/brownianeuler_mean_{t}.nc",
         "variance_filename": "euler_brownian_005/euler_brownian_{resolution}/brownianeulervariance_{t}.nc",
+        "name='Fractional Brownian $H": "0.05$'",
         "stat_filename": "euler_brownian_005/euler_brownian_{resolution}/brownianeuler_{stat}_{t}.nc"
     },
     "fract010": {
+        "maxT": 4,
+        "Tarray": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+        ],
         "resolutions": [
             64,
             128,
@@ -205,9 +289,30 @@
         "basic_filename": "euler_brownian_010/euler_brownian_{resolution}/brownianeuler_{direction}_structure_basic_{p}.000000_{t}.nc",
         "mean_filename": "euler_brownian_010/euler_brownian_{resolution}/brownianeuler_mean_{t}.nc",
         "variance_filename": "euler_brownian_010/euler_brownian_{resolution}/brownianeulervariance_{t}.nc",
+        "name='Fractional Brownian $H": "0.10$'",
         "stat_filename": "euler_brownian_010/euler_brownian_{resolution}/brownianeuler_{stat}_{t}.nc"
     },
     "shock": {
+        "maxT": 4,
+        "Tarray": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+        ],
         "resolutions": [
             64,
             128,
@@ -231,9 +336,30 @@
         "basic_filename": "shockvortex/shockvortex_{resolution}/shockvortex_{direction}_structure_basic_{p}.000000_{t}.nc",
         "mean_filename": "shockvortex/shockvortex_{resolution}/shockvortex_mean_{t}.nc",
         "variance_filename": "shockvortex/shockvortex_{resolution}/shockvortex_{t}.nc",
+        "name": "Shockvortex",
         "stat_filename": "shockvortex/shockvortex_{resolution}/shockvortex_{stat}_{t}.nc"
     },
     "shockuni": {
+        "maxT": 4,
+        "Tarray": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+        ],
         "resolutions": [
             64,
             128,
@@ -257,6 +383,7 @@
         "basic_filename": "shockvortex_uniform1d/shockvortex_{resolution}/shockvortex_{direction}_structure_basic_{p}.000000_{t}.nc",
         "mean_filename": "shockvortex_uniform1d/shockvortex_{resolution}/shockvortex_mean_{t}.nc",
         "variance_filename": "shockvortex_uniform1d/shockvortex_{resolution}/shockvortex_{t}.nc",
+        "name": "Shockvortex (midpoint)",
         "stat_filename": "shockvortex_uniform1d/shockvortex_{resolution}/shockvortex_{stat}_{t}.nc"
     }
 }
