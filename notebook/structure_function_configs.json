@@ -289,7 +289,7 @@
         "basic_filename": "euler_brownian_010/euler_brownian_{resolution}/brownianeuler_{direction}_structure_basic_{p}.000000_{t}.nc",
         "mean_filename": "euler_brownian_010/euler_brownian_{resolution}/brownianeuler_mean_{t}.nc",
         "variance_filename": "euler_brownian_010/euler_brownian_{resolution}/brownianeulervariance_{t}.nc",
-        "name='Fractional Brownian $H": "0.10$'",
+        "name" : "Fractional Brownian $H=0.10$",
         "stat_filename": "euler_brownian_010/euler_brownian_{resolution}/brownianeuler_{stat}_{t}.nc"
     },
     "shock": {
