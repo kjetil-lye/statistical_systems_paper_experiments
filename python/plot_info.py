@@ -337,3 +337,20 @@ def to_percent(y, position):
 def set_percentage_ticks(ax):
     """ ax is either plt.gca().xaxis or plt.gca().yaxis"""
     ax.set_major_formatter(matplotlib.ticker.FuncFormatter(to_percent))
+        
+def get_environment(name, filenames):
+    """
+    Gets the environment variable "name" and checks that the 
+    folder os.environ[name]/filename exists for each filename in filenames
+    """
+    if name not in os.environ:
+        raise Exception("Environment variable {name} not set.".format(name=name))
+    
+    basepath = os.environ[name]
+    for f in filenames: 
+        if not os.path.exists(os.path.join(basepath, f)):
+            raise Exception("Environment variable {name} is set to {basepath},\n " +\
+                           "but {fullpath} does not exists.".format(name=name,
+                                                                    basepath=basepath, 
+                                                                    fullpath=os.path.join(basepath, f)))
+    return basepath
