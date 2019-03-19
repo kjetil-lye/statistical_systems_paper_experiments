@@ -382,7 +382,7 @@ Hostname: eu-login-07-ng};
 %% GIT git_short_commit : unknown
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
 %% hostname : eu-login-07-ng
-%% generated_on_date : 2019-03-19 20:51:31.021972
+%% generated_on_date : 2019-03-19 21:42:18.061361
 %% python_version: 
 %%    /cluster/spack/apps/linux-centos7-x86_64/gcc-4.8.5/python-3.6.4-fffplms6xkieepdm3axllnzhdl4p672i/bin/python3.6 (Version: 3.6.4 (default, May 30 2018, 16:33:35) 
 %%    [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)])

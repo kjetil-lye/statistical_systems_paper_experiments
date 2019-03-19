@@ -382,7 +382,7 @@ Hostname: eu-login-07-ng};
 %% GIT git_short_commit : unknown
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
 %% hostname : eu-login-07-ng
-%% generated_on_date : 2019-03-19 20:51:14.915885
+%% generated_on_date : 2019-03-19 21:42:01.917160
 %% python_version: 
 %%    /cluster/spack/apps/linux-centos7-x86_64/gcc-4.8.5/python-3.6.4-fffplms6xkieepdm3axllnzhdl4p672i/bin/python3.6 (Version: 3.6.4 (default, May 30 2018, 16:33:35) 
 %%    [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)])
@@ -1378,6 +1378,7 @@ Hostname: eu-login-07-ng};
 %%     PIL.JpegPresets: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/PIL/JpegPresets.py)
 %%     PIL.PpmImagePlugin: 0.2 (/cluster/home/klye/.local/lib/python3.6/site-packages/PIL/PpmImagePlugin.py)
 %%     PIL.PngImagePlugin: 0.9 (/cluster/home/klye/.local/lib/python3.6/site-packages/PIL/PngImagePlugin.py)
+%%     zmq.utils.garbage: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/zmq/utils/garbage.py)
 %% stacktrace:
 %%     [function: savePlot, line: 240, file: ../python/plot_info.py]
 %%     [function: savePlot, line: 270, file: ../python/plot_info.py]
