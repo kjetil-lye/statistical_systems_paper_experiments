@@ -1,0 +1,262 @@
+{
+    "daint": {
+        "resolutions": [
+            128,
+            256,
+            512,
+            1024,
+            2048
+        ],
+        "variables": [
+            "rho",
+            "mx",
+            "my",
+            "E",
+            "p",
+            "ux",
+            "uy"
+        ],
+        "cube_filename": "kh_daint/samples_kelvinhelmholtz_{perturbation}_{resolution}/kh_cube_structure_cube_{p}.000000_{t}.nc",
+        "basic_filename": "kh_daint/samples_kelvinhelmholtz_{perturbation}_{resolution}/kh_{direction}_structure_basic_{p}.000000_{t}.nc"
+    },
+    "brownian": {
+        "resolutions": [
+            64,
+            128,
+            256,
+            512,
+            1024
+        ],
+        "variables": [
+            "rho",
+            "mx",
+            "my",
+            "E",
+            "p",
+            "ux",
+            "uy"
+        ],
+        "cube_filename": "euler_brownian/euler_brownian_{resolution}/brownianeuler_cube_structure_cube_{p}.000000_{t}.nc",
+        "basic_filename": "euler_brownian/euler_brownian_{resolution}/brownianeuler_{direction}_structure_basic_{p}.000000_{t}.nc",
+        "stat_filename": "euler_brownian/euler_brownian_{resolution}/brownianeuler_{stat}_{t}.nc"
+    },
+    "euler": {
+        "resolutions": [
+            64,
+            128,
+            256,
+            512,
+            1024
+        ],
+        "perturbations": [
+            0.1,
+            0.075,
+            0.05,
+            0.025,
+            0.01,
+            0.0075,
+            0.005,
+            0.0025,
+            0.001
+        ],
+        "variables": [
+            "rho",
+            "mx",
+            "my",
+            "E",
+            "p",
+            "ux",
+            "uy"
+        ],
+        "cube_filename": "kh_euler/kelvinhelmholtz_{perturbation}_{resolution}/kh_cube_structure_cube_{p}.000000_{t}.nc",
+        "basic_filename": "kh_euler/kelvinhelmholtz_{perturbation}_{resolution}/kh_{direction}_structure_basic_{p}.000000_{t}.nc"
+    },
+    "euler_gaussian": {
+        "name": "Kelvin-Helmholtz with Gaussian perturbation",
+        "resolutions": [
+            64,
+            128,
+            256,
+            512,
+            1024
+        ],
+        "perturbations": [
+            0.1,
+            0.075,
+            0.05,
+            0.025,
+            0.01
+        ],
+        "variables": [
+            "rho",
+            "mx",
+            "my",
+            "E",
+            "p",
+            "ux",
+            "uy"
+        ],
+        "cube_filename": "kh_gaussian/kelvinhelmholtz_{perturbation}_{resolution}/kh_cube_structure_cube_{p}.000000_{t}.nc",
+        "basic_filename": "kh_gaussian/kelvinhelmholtz_{perturbation}_{resolution}/kh_{direction}_structure_basic_{p}.000000_{t}.nc"
+    },
+    "richtmeyer": {
+        "resolutions": [
+            64,
+            128,
+            256,
+            512,
+            1024
+        ],
+        "perturbations": [
+            0.06,
+            0.025,
+            0.01,
+            0.0075,
+            0.005
+        ],
+        "variables": [
+            "rho",
+            "mx",
+            "my",
+            "E",
+            "p",
+            "ux",
+            "uy"
+        ],
+        "cube_filename": "richtmeyer_mc/richtmeyermeshkov_{perturbation}_{resolution}/rm_cube_structure_cube_{p}.000000_{t}.nc",
+        "basic_filename": "richtmeyer_mc/richtmeyermeshkov_{perturbation}_{resolution}/rm_{direction}_structure_basic_{p}.000000_{t}.nc",
+        "mean_filename": "richtmeyer_mc/richtmeyermeshkov_{perturbation}_{resolution}/rm_mean_{t}.nc",
+        "variance_filename": "richtmeyer_mc/richtmeyermeshkov_{perturbation}_{resolution}/rm_variance_{t}.nc",
+        "stat_filename": "richtmeyer_mc/richtmeyermeshkov_{perturbation}_{resolution}/rm_{stat}_{t}.nc"
+    },
+    "fract075": {
+        "resolutions": [
+            64,
+            128,
+            256,
+            512,
+            1024
+        ],
+        "perturbations": [
+            0.1
+        ],
+        "variables": [
+            "rho",
+            "mx",
+            "my",
+            "E",
+            "p",
+            "ux",
+            "uy"
+        ],
+        "cube_filename": "euler_brownian_075/euler_brownian_{resolution}/brownianeuler_cube_structure_cube_{p}.000000_{t}.nc",
+        "basic_filename": "euler_brownian_075/euler_brownian_{resolution}/brownianeuler_{direction}_structure_basic_{p}.000000_{t}.nc",
+        "mean_filename": "euler_brownian_075/euler_brownian_{resolution}/brownianeuler_mean_{t}.nc",
+        "variance_filename": "euler_brownian_075/euler_brownian_{resolution}/brownianeulervariance_{t}.nc",
+        "stat_filename": "euler_brownian_075/euler_brownian_{resolution}/brownianeuler_{stat}_{t}.nc"
+    },
+    "fract005": {
+        "resolutions": [
+            64,
+            128,
+            256,
+            512,
+            1024
+        ],
+        "perturbations": [
+            0.1
+        ],
+        "variables": [
+            "rho",
+            "mx",
+            "my",
+            "E",
+            "p",
+            "ux",
+            "uy"
+        ],
+        "cube_filename": "euler_brownian_005/euler_brownian_{resolution}/brownianeuler_cube_structure_cube_{p}.000000_{t}.nc",
+        "basic_filename": "euler_brownian_005/euler_brownian_{resolution}/brownianeuler_{direction}_structure_basic_{p}.000000_{t}.nc",
+        "mean_filename": "euler_brownian_005/euler_brownian_{resolution}/brownianeuler_mean_{t}.nc",
+        "variance_filename": "euler_brownian_005/euler_brownian_{resolution}/brownianeulervariance_{t}.nc",
+        "stat_filename": "euler_brownian_005/euler_brownian_{resolution}/brownianeuler_{stat}_{t}.nc"
+    },
+    "fract010": {
+        "resolutions": [
+            64,
+            128,
+            256,
+            512,
+            1024
+        ],
+        "perturbations": [
+            0.1
+        ],
+        "variables": [
+            "rho",
+            "mx",
+            "my",
+            "E",
+            "p",
+            "ux",
+            "uy"
+        ],
+        "cube_filename": "euler_brownian_010/euler_brownian_{resolution}/brownianeuler_cube_structure_cube_{p}.000000_{t}.nc",
+        "basic_filename": "euler_brownian_010/euler_brownian_{resolution}/brownianeuler_{direction}_structure_basic_{p}.000000_{t}.nc",
+        "mean_filename": "euler_brownian_010/euler_brownian_{resolution}/brownianeuler_mean_{t}.nc",
+        "variance_filename": "euler_brownian_010/euler_brownian_{resolution}/brownianeulervariance_{t}.nc",
+        "stat_filename": "euler_brownian_010/euler_brownian_{resolution}/brownianeuler_{stat}_{t}.nc"
+    },
+    "shock": {
+        "resolutions": [
+            64,
+            128,
+            256,
+            512,
+            1024
+        ],
+        "perturbations": [
+            0.1
+        ],
+        "variables": [
+            "rho",
+            "mx",
+            "my",
+            "E",
+            "p",
+            "ux",
+            "uy"
+        ],
+        "cube_filename": "shockvortex/shockvortex_{resolution}/shockvortex_cube_structure_cube_{p}.000000_{t}.nc",
+        "basic_filename": "shockvortex/shockvortex_{resolution}/shockvortex_{direction}_structure_basic_{p}.000000_{t}.nc",
+        "mean_filename": "shockvortex/shockvortex_{resolution}/shockvortex_mean_{t}.nc",
+        "variance_filename": "shockvortex/shockvortex_{resolution}/shockvortex_{t}.nc",
+        "stat_filename": "shockvortex/shockvortex_{resolution}/shockvortex_{stat}_{t}.nc"
+    },
+    "shockuni": {
+        "resolutions": [
+            64,
+            128,
+            256,
+            512,
+            1024
+        ],
+        "perturbations": [
+            0.1
+        ],
+        "variables": [
+            "rho",
+            "mx",
+            "my",
+            "E",
+            "p",
+            "ux",
+            "uy"
+        ],
+        "cube_filename": "shockvortex_uniform1d/shockvortex_{resolution}/shockvortex_cube_structure_cube_{p}.000000_{t}.nc",
+        "basic_filename": "shockvortex_uniform1d/shockvortex_{resolution}/shockvortex_{direction}_structure_basic_{p}.000000_{t}.nc",
+        "mean_filename": "shockvortex_uniform1d/shockvortex_{resolution}/shockvortex_mean_{t}.nc",
+        "variance_filename": "shockvortex_uniform1d/shockvortex_{resolution}/shockvortex_{t}.nc",
+        "stat_filename": "shockvortex_uniform1d/shockvortex_{resolution}/shockvortex_{stat}_{t}.nc"
+    }
+}
