@@ -327,15 +327,15 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: unknown
-Repo: unknown
+Commit: 2b5a2d777b86f150b976627e87646e536eed3f39
+Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
 Hostname: eu-login-07-ng};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=black,
   rotate=0.0
-]{ @unknown};
+]{ @2b5a};
 \end{axis}
 
 \end{tikzpicture}
@@ -347,14 +347,14 @@ Hostname: eu-login-07-ng};
 %% script name: StructureAlsvinn.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : unknown
-%% GIT git_repo_modified : unknown
-%% GIT git_branch : unknown
-%% GIT git_remote_url : unknown
-%% GIT git_short_commit : unknown
+%% GIT git_commit : 2b5a2d777b86f150b976627e87646e536eed3f39
+%% GIT git_repo_modified : False
+%% GIT git_branch : master
+%% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
+%% GIT git_short_commit : 2b5a
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
 %% hostname : eu-login-07-ng
-%% generated_on_date : 2019-03-19 21:42:04.964423
+%% generated_on_date : 2019-03-19 23:08:09.288143
 %% python_version: 
 %%    /cluster/spack/apps/linux-centos7-x86_64/gcc-4.8.5/python-3.6.4-fffplms6xkieepdm3axllnzhdl4p672i/bin/python3.6 (Version: 3.6.4 (default, May 30 2018, 16:33:35) 
 %%    [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)])
@@ -1326,6 +1326,68 @@ Hostname: eu-login-07-ng};
 %%     matplotlib2tikz.quadmesh: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/matplotlib2tikz/quadmesh.py)
 %%     matplotlib2tikz.patch: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/matplotlib2tikz/patch.py)
 %%     matplotlib2tikz.text: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/matplotlib2tikz/text.py)
+%%     git: 2.1.11 (/cluster/home/klye/.local/lib/python3.6/site-packages/git/__init__.py)
+%%     gitdb: 2.0.5 (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/__init__.py)
+%%     smmap: 2.0.5 (/cluster/home/klye/.local/lib/python3.6/site-packages/smmap/__init__.py)
+%%     smmap.mman: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/smmap/mman.py)
+%%     smmap.util: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/smmap/util.py)
+%%     mmap: Unknown (/cluster/spack/apps/linux-centos7-x86_64/gcc-4.8.5/python-3.6.4-fffplms6xkieepdm3axllnzhdl4p672i/lib/python3.6/lib-dynload/mmap.cpython-36m-x86_64-linux-gnu.so)
+%%     smmap.buf: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/smmap/buf.py)
+%%     gitdb.base: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/base.py)
+%%     gitdb.util: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/util.py)
+%%     gitdb.const: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/const.py)
+%%     gitdb.fun: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/fun.py)
+%%     gitdb.utils: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/utils/__init__.py)
+%%     gitdb.utils.encoding: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/utils/encoding.py)
+%%     gitdb.utils.compat: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/utils/compat.py)
+%%     gitdb.typ: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/typ.py)
+%%     gitdb.db: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/db/__init__.py)
+%%     gitdb.db.base: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/db/base.py)
+%%     gitdb.exc: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/exc.py)
+%%     gitdb.db.loose: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/db/loose.py)
+%%     gitdb.stream: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/stream.py)
+%%     gitdb.db.mem: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/db/mem.py)
+%%     gitdb.db.pack: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/db/pack.py)
+%%     gitdb.pack: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/pack.py)
+%%     gitdb.db.git: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/db/git.py)
+%%     gitdb.db.ref: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/gitdb/db/ref.py)
+%%     git.exc: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/exc.py)
+%%     git.compat: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/compat.py)
+%%     encodings.ascii: Unknown (/cluster/spack/apps/linux-centos7-x86_64/gcc-4.8.5/python-3.6.4-fffplms6xkieepdm3axllnzhdl4p672i/lib/python3.6/encodings/ascii.py)
+%%     git.config: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/config.py)
+%%     git.util: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/util.py)
+%%     configparser: Unknown (/cluster/spack/apps/linux-centos7-x86_64/gcc-4.8.5/python-3.6.4-fffplms6xkieepdm3axllnzhdl4p672i/lib/python3.6/configparser.py)
+%%     git.objects: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/objects/__init__.py)
+%%     git.objects.base: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/objects/base.py)
+%%     git.objects.util: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/objects/util.py)
+%%     git.objects.blob: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/objects/blob.py)
+%%     git.objects.commit: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/objects/commit.py)
+%%     git.diff: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/diff.py)
+%%     git.cmd: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/cmd.py)
+%%     git.objects.tree: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/objects/tree.py)
+%%     git.objects.submodule: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/objects/submodule/__init__.py)
+%%     git.objects.submodule.base: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/objects/submodule/base.py)
+%%     git.objects.submodule.util: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/objects/submodule/util.py)
+%%     git.objects.fun: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/objects/fun.py)
+%%     git.objects.submodule.root: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/objects/submodule/root.py)
+%%     git.objects.tag: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/objects/tag.py)
+%%     git.refs: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/refs/__init__.py)
+%%     git.refs.symbolic: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/refs/symbolic.py)
+%%     git.refs.log: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/refs/log.py)
+%%     git.refs.reference: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/refs/reference.py)
+%%     git.refs.head: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/refs/head.py)
+%%     git.refs.tag: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/refs/tag.py)
+%%     git.refs.remote: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/refs/remote.py)
+%%     git.db: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/db.py)
+%%     git.repo: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/repo/__init__.py)
+%%     git.repo.base: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/repo/base.py)
+%%     git.index: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/index/__init__.py)
+%%     git.index.base: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/index/base.py)
+%%     git.index.fun: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/index/fun.py)
+%%     git.index.typ: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/index/typ.py)
+%%     git.index.util: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/index/util.py)
+%%     git.remote: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/remote.py)
+%%     git.repo.fun: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/git/repo/fun.py)
 %%     netCDF4: 1.4.2 (/cluster/home/klye/.local/lib/python3.6/site-packages/netCDF4/__init__.py)
 %%     netCDF4._netCDF4: 1.4.2 (/cluster/home/klye/.local/lib/python3.6/site-packages/netCDF4/_netCDF4.cpython-36m-x86_64-linux-gnu.so)
 %%     _cython_0_29: Unknown (Unknown)
