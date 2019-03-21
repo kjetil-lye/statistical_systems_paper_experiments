@@ -260,7 +260,7 @@ def savePlot(name):
                                 'hostname':socket.gethostname(),
                                 'generated_on_date': str(datetime.datetime.now()),
                                 **gitMetadata,
-                                "accessed_environment" : **get_environment.accessed_environments,
+                                **get_environment.accessed_environments,
                                 "modules_loaded": get_loaded_python_modules_formatted(),
                                 "python_version": get_python_description(),
                                 'stacktrace': get_stacktrace_str(),
