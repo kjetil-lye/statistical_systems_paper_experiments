@@ -192,10 +192,13 @@ def savePlot(name):
     ax = plt.gca()
     gitMetadata = get_git_metadata()
     informationText = 'By Ulrik S. Fjordholm@UiO <ulriksf@gmal.com>\nand Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>\nand Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>\nand Franziska Weber@CMU <franzisw@andrew.cmu.edu>\nCommit: %s\nRepo: %s\nHostname: %s' % (gitMetadata['git_commit'], gitMetadata['git_remote_url'], socket.gethostname())
-
-    ax.text(0.95, 0.01, informationText,
-         fontsize=3, color='gray',
-         ha='right', va='bottom', alpha=0.5, transform=ax.transAxes)
+    try:
+        ax.text(0.95, 0.01, informationText,
+                fontsize=3, color='gray',
+                ha='right', va='bottom', alpha=0.5, transform=ax.transAxes)
+    except:
+        # This doesn't always work for 3d plots
+        pass
 
     if gitMetadata['git_short_commit'] != "unkown":
         if not name.endswith("_notitle"):
