@@ -201,10 +201,13 @@ def savePlot(name):
         pass
 
     if gitMetadata['git_short_commit'] != "unkown":
-        if not name.endswith("_notitle"):
-            ax.text(0.2, 0.93, "@" + gitMetadata['git_short_commit'], fontsize=10,
-            ha='right', va='bottom', alpha=0.5, transform=ax.transAxes)
-
+        try:
+            if not name.endswith("_notitle"):
+                ax.text(0.2, 0.93, "@" + gitMetadata['git_short_commit'], fontsize=10,
+                        ha='right', va='bottom', alpha=0.5, transform=ax.transAxes)
+        except:
+            # 3d plots had some issues with the text attribute
+            pass
     # We don't want all the output from matplotlib2tikz
 
     with RedirectStdStreamsToNull():
