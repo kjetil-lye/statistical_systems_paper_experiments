@@ -240,6 +240,8 @@ def savePlot(name):
                     f.write("%% stacktrace:\n")
                     for line in get_stacktrace_str().splitlines():
                         f.write("%%     {}\n".format(line))
+            except:
+                console_log("Failed to save tikz file {}.xyz (probably just a 3d plot, they do not work in tikz)".format(name))
 
 
 
