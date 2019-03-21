@@ -113,7 +113,7 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: bbff3d12f5703ef85a5f46e8732cf64d90e8907a
+Commit: 8ccc44e662422ee6562159d106d408d2a1f16b2a
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
 Hostname: eu-login-10-ng};
 \node at (axis cs:0.2,0.93)[
@@ -121,7 +121,7 @@ Hostname: eu-login-10-ng};
   anchor=south east,
   text=black,
   rotate=0.0
-]{ @bbff};
+]{ @8ccc};
 \end{axis}
 
 \end{tikzpicture}
@@ -132,14 +132,14 @@ Hostname: eu-login-10-ng};
 %% script name: StructureAlsvinn.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : bbff3d12f5703ef85a5f46e8732cf64d90e8907a
+%% GIT git_commit : 8ccc44e662422ee6562159d106d408d2a1f16b2a
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : bbff
+%% GIT git_short_commit : 8ccc
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
 %% hostname : eu-login-10-ng
-%% generated_on_date : 2019-03-21 13:27:17.883144
+%% generated_on_date : 2019-03-21 20:16:37.681779
 %% accessed_environment:
 %%    STATISTICAL_STRUCTURE=/cluster/project/sam/klye/systemspaperdata
 %% python_version: 
@@ -1201,8 +1201,8 @@ Hostname: eu-login-10-ng};
 %%     PIL.PngImagePlugin: 0.9 (/cluster/home/klye/.local/lib/python3.6/site-packages/PIL/PngImagePlugin.py)
 %%     zmq.utils.garbage: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/zmq/utils/garbage.py)
 %% stacktrace:
-%%     [function: savePlot, line: 247, file: ../python/plot_info.py]
-%%     [function: showAndSave, line: 290, file: ../python/plot_info.py]
+%%     [function: savePlot, line: 253, file: ../python/plot_info.py]
+%%     [function: showAndSave, line: 296, file: ../python/plot_info.py]
 %%     [function: <module>, line: 57, file: <ipython-input-9-4d636de71645>]
 %%     [function: run_code, line: 3291, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3209, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
