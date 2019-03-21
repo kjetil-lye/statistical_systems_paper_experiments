@@ -20,7 +20,7 @@ tick align=outside,
 tick pos=left,
 width=\figurewidth,
 x grid style={white!69.01960784313725!black},
-xlabel={Resolution ($N	imes N$)},
+xlabel={Resolution ($N\times N$)},
 xmajorgrids,
 xmin=55.7152360509519, xmax=1176.26711551696,
 xmode=log,
@@ -146,7 +146,7 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: ad1c9f357e26b72af1e4e0ba789d7f5cd86069c2
+Commit: 1b57507d5273e1b9b8dbbd31bf3b513d5d34c583
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
 Hostname: eu-login-10-ng};
 \node at (axis cs:0.2,0.93)[
@@ -154,7 +154,7 @@ Hostname: eu-login-10-ng};
   anchor=south east,
   text=black,
   rotate=0.0
-]{ @ad1c9};
+]{ @1b57};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -165,7 +165,7 @@ Hostname: eu-login-10-ng};
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: ad1c9f357e26b72af1e4e0ba789d7f5cd86069c2
+Commit: 1b57507d5273e1b9b8dbbd31bf3b513d5d34c583
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
 Hostname: eu-login-10-ng};
 \end{axis}
@@ -179,14 +179,14 @@ Hostname: eu-login-10-ng};
 %% script name: BV_experiments.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : ad1c9f357e26b72af1e4e0ba789d7f5cd86069c2
+%% GIT git_commit : 1b57507d5273e1b9b8dbbd31bf3b513d5d34c583
 %% GIT git_repo_modified : False
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : ad1c9
+%% GIT git_short_commit : 1b57
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
 %% hostname : eu-login-10-ng
-%% generated_on_date : 2019-03-21 09:09:54.956758
+%% generated_on_date : 2019-03-21 09:13:45.997522
 %% python_version: 
 %%    /cluster/spack/apps/linux-centos7-x86_64/gcc-4.8.5/python-3.6.4-fffplms6xkieepdm3axllnzhdl4p672i/bin/python3.6 (Version: 3.6.4 (default, May 30 2018, 16:33:35) 
 %%    [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)])
@@ -1249,8 +1249,8 @@ Hostname: eu-login-10-ng};
 %%     [function: savePlot, line: 241, file: ../python/plot_info.py]
 %%     [function: savePlot, line: 273, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 283, file: ../python/plot_info.py]
-%%     [function: plotResolutionDirection, line: 240, file: <ipython-input-2-4c5cee0f2aea>]
-%%     [function: <module>, line: 243, file: <ipython-input-2-4c5cee0f2aea>]
+%%     [function: plotResolutionDirection, line: 240, file: <ipython-input-2-2a654e3aab5f>]
+%%     [function: <module>, line: 243, file: <ipython-input-2-2a654e3aab5f>]
 %%     [function: run_code, line: 3291, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3215, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3044, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
