@@ -22,7 +22,7 @@ ymin=0, ymax=1,
 ytick={0,0.2,0.4,0.6,0.8,1},
 yticklabels={0.0,0.2,0.4,0.6,0.8,1.0}
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {mean_kelvinhelmholtz_512_00500_1_notitle-000.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {mean_kelvinhelmholtz_512_00500_1_notitle-001.png};
 \path [draw=black, fill opacity=0] (axis cs:0,0)
 --(axis cs:0,1);
 
@@ -45,15 +45,15 @@ yticklabels={0.0,0.2,0.4,0.6,0.8,1.0}
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: 2b5a2d777b86f150b976627e87646e536eed3f39
+Commit: 22e295e959a27295fcd41a16c4d8f94ae1bb4432
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-login-07-ng};
+Hostname: eu-login-10-ng};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=black,
   rotate=0.0
-]{ @2b5a};
+]{ @22e2};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -64,9 +64,9 @@ Hostname: eu-login-07-ng};
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: 2b5a2d777b86f150b976627e87646e536eed3f39
+Commit: 22e295e959a27295fcd41a16c4d8f94ae1bb4432
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-login-07-ng};
+Hostname: eu-login-10-ng};
 \end{axis}
 
 \end{tikzpicture}
@@ -78,14 +78,14 @@ Hostname: eu-login-07-ng};
 %% script name: StructureAlsvinn.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 2b5a2d777b86f150b976627e87646e536eed3f39
+%% GIT git_commit : 22e295e959a27295fcd41a16c4d8f94ae1bb4432
 %% GIT git_repo_modified : False
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : 2b5a
+%% GIT git_short_commit : 22e2
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-login-07-ng
-%% generated_on_date : 2019-03-19 21:56:38.458393
+%% hostname : eu-login-10-ng
+%% generated_on_date : 2019-03-21 09:24:32.674351
 %% python_version: 
 %%    /cluster/spack/apps/linux-centos7-x86_64/gcc-4.8.5/python-3.6.4-fffplms6xkieepdm3axllnzhdl4p672i/bin/python3.6 (Version: 3.6.4 (default, May 30 2018, 16:33:35) 
 %%    [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)])
@@ -1145,9 +1145,9 @@ Hostname: eu-login-07-ng};
 %%     PIL.PngImagePlugin: 0.9 (/cluster/home/klye/.local/lib/python3.6/site-packages/PIL/PngImagePlugin.py)
 %%     zmq.utils.garbage: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/zmq/utils/garbage.py)
 %% stacktrace:
-%%     [function: savePlot, line: 240, file: ../python/plot_info.py]
-%%     [function: savePlot, line: 270, file: ../python/plot_info.py]
-%%     [function: showAndSave, line: 280, file: ../python/plot_info.py]
+%%     [function: savePlot, line: 241, file: ../python/plot_info.py]
+%%     [function: savePlot, line: 273, file: ../python/plot_info.py]
+%%     [function: showAndSave, line: 283, file: ../python/plot_info.py]
 %%     [function: plot_mean_var_convergence, line: 47, file: <ipython-input-4-12bf94f0134f>]
 %%     [function: for_each_config, line: 30, file: <ipython-input-1-da734a3d2a3c>]
 %%     [function: <module>, line: 67, file: <ipython-input-4-12bf94f0134f>]
