@@ -229,6 +229,12 @@ def savePlot(name):
                     f.write("%% working_directory : {}\n".format(os.getcwd()))
                     f.write("%% hostname : {}\n".format(socket.gethostname()))
                     f.write("%% generated_on_date : {}\n".format(str(datetime.datetime.now())))
+                    f.write("%% accessed_environment:\n")
+                    for k in get_environment.accessed_environments.keys():
+                        environment_value = get_environment.accessed_environments[k]
+                        environment_value = environment_value.replace("\n", "")
+                        environment_value = environment_value.replace("\r", "")
+                        f.write("%%    {}={}\n".format(k, environment_value))
                     f.write("%% python_version: \n")
                     for l in get_python_description().splitlines():
                         f.write("%%    {}\n".format(l))
@@ -254,6 +260,7 @@ def savePlot(name):
                                 'hostname':socket.gethostname(),
                                 'generated_on_date': str(datetime.datetime.now()),
                                 **gitMetadata,
+                                "accessed_environment" : **get_environment.accessed_environments,
                                 "modules_loaded": get_loaded_python_modules_formatted(),
                                 "python_version": get_python_description(),
                                 'stacktrace': get_stacktrace_str(),
@@ -357,7 +364,11 @@ def get_environment(name, filenames):
                            "but {fullpath} does not exists.").format(name=name,
                                                                     basepath=basepath,
                                                                     fullpath=os.path.join(basepath, f)))
+    get_environment.accessed_environments[name] = basepath
     return basepath
+
+
+get_environment.accessed_environments = {}
 
 
 def get_notebook_name():
