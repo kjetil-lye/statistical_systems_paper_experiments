@@ -1,0 +1,33 @@
+% This file was created by matplotlib2tikz v0.6.18.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+
+\begin{axis}[
+height=\figureheight,
+tick align=outside,
+tick pos=left,
+title={Wasserstein convergence for Brownian motion
+for first correlation marginal},
+width=\figurewidth,
+x grid style={white!69.01960784313725!black},
+xlabel={Resolution},
+xmin=115.360059214186, xmax=1136.19913939747,
+xmode=log,
+xtick={128,256,512,1024},
+xticklabels={$128 \times 128$,$256 \times 256$,$512 \times 512$,$1024 \times 1024$},
+y grid style={white!69.01960784313725!black},
+ylabel={$||W_1(\nu^{1, \Delta x}, \nu^{1, \Delta x/2})||_{L^1(D)}$},
+ymin=0.0115950866336471, ymax=0.0569133665802898,
+ymode=log
+]
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}, forget plot]
+table [row sep=\\]{%
+128	0.0529429211208004 \\
+256	0.0327549629983773 \\
+512	0.0202102740701576 \\
+1024	0.0124646582043564 \\
+};
+\end{axis}
+
+\end{tikzpicture}

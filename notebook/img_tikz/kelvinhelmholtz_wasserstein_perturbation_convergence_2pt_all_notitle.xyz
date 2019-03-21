@@ -54,15 +54,15 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: 219861dd9380da8305356eeaae1c7dfdbb77c47b
+Commit: 44ed95c0c23638856e31f051159e0b14b6a0f5a4
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-059-08};
+Hostname: eu-c7-105-11};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=black,
   rotate=0.0
-]{ @2198};
+]{ @44ed};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -73,9 +73,9 @@ Hostname: eu-c7-059-08};
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: 219861dd9380da8305356eeaae1c7dfdbb77c47b
+Commit: 44ed95c0c23638856e31f051159e0b14b6a0f5a4
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-059-08};
+Hostname: eu-c7-105-11};
 \end{axis}
 
 \end{tikzpicture}
@@ -87,14 +87,14 @@ Hostname: eu-c7-059-08};
 %% script name: WassersteinDistancesPerturbationsAll.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 219861dd9380da8305356eeaae1c7dfdbb77c47b
-%% GIT git_repo_modified : False
+%% GIT git_commit : 44ed95c0c23638856e31f051159e0b14b6a0f5a4
+%% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : 2198
+%% GIT git_short_commit : 44ed
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-c7-059-08
-%% generated_on_date : 2019-03-20 18:09:02.658470
+%% hostname : eu-c7-105-11
+%% generated_on_date : 2019-03-21 14:25:50.996903
 %% python_version: 
 %%    /cluster/spack/apps/linux-centos7-x86_64/gcc-4.8.5/python-3.6.4-fffplms6xkieepdm3axllnzhdl4p672i/bin/python3.6 (Version: 3.6.4 (default, May 30 2018, 16:33:35) 
 %%    [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)])
@@ -1430,9 +1430,9 @@ Hostname: eu-c7-059-08};
 %%     PIL.PpmImagePlugin: 0.2 (/cluster/home/klye/.local/lib/python3.6/site-packages/PIL/PpmImagePlugin.py)
 %%     PIL.PngImagePlugin: 0.9 (/cluster/home/klye/.local/lib/python3.6/site-packages/PIL/PngImagePlugin.py)
 %% stacktrace:
-%%     [function: savePlot, line: 240, file: ../python/plot_info.py]
-%%     [function: savePlot, line: 270, file: ../python/plot_info.py]
-%%     [function: showAndSave, line: 280, file: ../python/plot_info.py]
+%%     [function: savePlot, line: 241, file: ../python/plot_info.py]
+%%     [function: savePlot, line: 273, file: ../python/plot_info.py]
+%%     [function: showAndSave, line: 283, file: ../python/plot_info.py]
 %%     [function: plotWassersteinConvergence, line: 85, file: <ipython-input-4-be3bef8463f5>]
 %%     [function: <module>, line: 15, file: <ipython-input-5-e896d03aa49e>]
 %%     [function: run_code, line: 3291, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
