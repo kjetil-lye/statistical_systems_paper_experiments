@@ -206,39 +206,40 @@ def savePlot(name):
 
     with RedirectStdStreamsToNull():
         if savePlot.saveTikz:
-            matplotlib2tikz.save('img_tikz/' + name + '.xyz',
-                figureheight = '\\figureheight',
-                figurewidth = '\\figurewidth',
-                show_info = False)
+            try:
+                matplotlib2tikz.save('img_tikz/' + name + '.xyz',
+                                     figureheight = '\\figureheight',
+                                     figurewidth = '\\figurewidth',
+                                     show_info = False)
 
-            with open ('img_tikz/' + name + '.xyz', 'a') as f:
-                f.write("\n\n")
-                f.write("%% INCLUDE THE COMMENTS AT THE END WHEN COPYING\n")
-                f.write("%%%%%%%%%%%%%TITLE%%%%%%%%%%%%%%%%%\n")
-                for line in title.splitlines():
-                    f.write("%% {}\n".format(line))
-                f.write("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n")
-                f.write("%% script name: {}".format(get_notebook_name()))
-                f.write("\n")
-                f.write("%% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT\n")
-                f.write("%% DO NOT REMOVE THE COMMENTS BELOW!\n")
-                for k in gitMetadata.keys():
-                    f.write("%% GIT {} : {}\n".format(k, gitMetadata[k]))
+                with open ('img_tikz/' + name + '.xyz', 'a') as f:
+                    f.write("\n\n")
+                    f.write("%% INCLUDE THE COMMENTS AT THE END WHEN COPYING\n")
+                    f.write("%%%%%%%%%%%%%TITLE%%%%%%%%%%%%%%%%%\n")
+                    for line in title.splitlines():
+                        f.write("%% {}\n".format(line))
+                    f.write("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n")
+                    f.write("%% script name: {}".format(get_notebook_name()))
+                    f.write("\n")
+                    f.write("%% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT\n")
+                    f.write("%% DO NOT REMOVE THE COMMENTS BELOW!\n")
+                    for k in gitMetadata.keys():
+                        f.write("%% GIT {} : {}\n".format(k, gitMetadata[k]))
 
-                f.write("%% working_directory : {}\n".format(os.getcwd()))
-                f.write("%% hostname : {}\n".format(socket.gethostname()))
-                f.write("%% generated_on_date : {}\n".format(str(datetime.datetime.now())))
-                f.write("%% python_version: \n")
-                for l in get_python_description().splitlines():
-                    f.write("%%    {}\n".format(l))
+                    f.write("%% working_directory : {}\n".format(os.getcwd()))
+                    f.write("%% hostname : {}\n".format(socket.gethostname()))
+                    f.write("%% generated_on_date : {}\n".format(str(datetime.datetime.now())))
+                    f.write("%% python_version: \n")
+                    for l in get_python_description().splitlines():
+                        f.write("%%    {}\n".format(l))
 
-                f.write("%% python modules:\n")
-                for module in get_loaded_python_modules():
-                    f.write("%%     {name}: {version} ({file})\n".format(**module))
+                    f.write("%% python modules:\n")
+                    for module in get_loaded_python_modules():
+                        f.write("%%     {name}: {version} ({file})\n".format(**module))
 
-                f.write("%% stacktrace:\n")
-                for line in get_stacktrace_str().splitlines():
-                    f.write("%%     {}\n".format(line))
+                    f.write("%% stacktrace:\n")
+                    for line in get_stacktrace_str().splitlines():
+                        f.write("%%     {}\n".format(line))
 
 
 
