@@ -342,15 +342,15 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: 2b5a2d777b86f150b976627e87646e536eed3f39
+Commit: 8ccc44e662422ee6562159d106d408d2a1f16b2a
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-login-07-ng};
+Hostname: eu-login-10-ng};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=black,
   rotate=0.0
-]{ @2b5a};
+]{ @8ccc};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -361,9 +361,9 @@ Hostname: eu-login-07-ng};
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: 2b5a2d777b86f150b976627e87646e536eed3f39
+Commit: 8ccc44e662422ee6562159d106d408d2a1f16b2a
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-login-07-ng};
+Hostname: eu-login-10-ng};
 \end{axis}
 
 \end{tikzpicture}
@@ -375,14 +375,16 @@ Hostname: eu-login-07-ng};
 %% script name: StructureAlsvinn.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 2b5a2d777b86f150b976627e87646e536eed3f39
-%% GIT git_repo_modified : False
+%% GIT git_commit : 8ccc44e662422ee6562159d106d408d2a1f16b2a
+%% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : 2b5a
+%% GIT git_short_commit : 8ccc
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-login-07-ng
-%% generated_on_date : 2019-03-19 23:08:22.758600
+%% hostname : eu-login-10-ng
+%% generated_on_date : 2019-03-21 20:16:22.953389
+%% accessed_environment:
+%%    STATISTICAL_STRUCTURE=/cluster/project/sam/klye/systemspaperdata
 %% python_version: 
 %%    /cluster/spack/apps/linux-centos7-x86_64/gcc-4.8.5/python-3.6.4-fffplms6xkieepdm3axllnzhdl4p672i/bin/python3.6 (Version: 3.6.4 (default, May 30 2018, 16:33:35) 
 %%    [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)])
@@ -1442,9 +1444,9 @@ Hostname: eu-login-07-ng};
 %%     PIL.PngImagePlugin: 0.9 (/cluster/home/klye/.local/lib/python3.6/site-packages/PIL/PngImagePlugin.py)
 %%     zmq.utils.garbage: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/zmq/utils/garbage.py)
 %% stacktrace:
-%%     [function: savePlot, line: 240, file: ../python/plot_info.py]
-%%     [function: savePlot, line: 270, file: ../python/plot_info.py]
-%%     [function: showAndSave, line: 280, file: ../python/plot_info.py]
+%%     [function: savePlot, line: 253, file: ../python/plot_info.py]
+%%     [function: savePlot, line: 286, file: ../python/plot_info.py]
+%%     [function: showAndSave, line: 296, file: ../python/plot_info.py]
 %%     [function: compare_gaussian_uniform, line: 49, file: <ipython-input-7-359ce6217fee>]
 %%     [function: <module>, line: 50, file: <ipython-input-7-359ce6217fee>]
 %%     [function: run_code, line: 3291, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
