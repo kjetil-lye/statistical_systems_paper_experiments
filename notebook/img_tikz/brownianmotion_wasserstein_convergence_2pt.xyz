@@ -7,6 +7,8 @@
 height=\figureheight,
 tick align=outside,
 tick pos=left,
+title={Wasserstein convergence for Brownian motion
+for second correlation marginal},
 width=\figurewidth,
 x grid style={white!69.01960784313725!black},
 xlabel={Resolution},
@@ -16,30 +18,16 @@ xtick={128,256,512,1024},
 xticklabels={$128 \times 128$,$256 \times 256$,$512 \times 512$,$1024 \times 1024$},
 y grid style={white!69.01960784313725!black},
 ylabel={$||W_1(\nu^{2, \Delta x}, \nu^{2,\Delta x/2})||_{L^1(D\times D)}$},
-ymin=0.0306232680650894, ymax=0.146284266274407,
-ymode=log,
-ytick={0.0078125,0.015625,0.03125,0.0625,0.125,0.25,0.5},
-yticklabels={$\mathdefault{2^{-7}}$,$\mathdefault{2^{-6}}$,$\mathdefault{2^{-5}}$,$\mathdefault{2^{-4}}$,$\mathdefault{2^{-3}}$,$\mathdefault{2^{-2}}$,$\mathdefault{2^{-1}}$}
+ymin=0.0561516485546235, ymax=0.163009897599088,
+ymode=log
 ]
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}, forget plot]
 table [row sep=\\]{%
-128	0.136247123259777 \\
-256	0.0589094492842142 \\
-512	0.0425408460745776 \\
-1024	0.0328792431916878 \\
+128	0.155301364572148 \\
+256	0.112652011518467 \\
+512	0.0812466099853498 \\
+1024	0.0589387897918748 \\
 };
-\path [draw=black, fill opacity=0] (axis cs:0,0.0306232680650894)
---(axis cs:0,0.146284266274407);
-
-\path [draw=black, fill opacity=0] (axis cs:1,0.0306232680650894)
---(axis cs:1,0.146284266274407);
-
-\path [draw=black, fill opacity=0] (axis cs:115.360059214186,0)
---(axis cs:1136.19913939747,0);
-
-\path [draw=black, fill opacity=0] (axis cs:115.360059214186,1)
---(axis cs:1136.19913939747,1);
-
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -59,26 +47,14 @@ Hostname: eu-c7-060-15};
   text=black,
   rotate=0.0
 ]{ @2389};
-\node at (axis cs:0.95,0.01)[
-  scale=0.15,
-  anchor=south east,
-  text=white!50.19607843137255!black,
-  rotate=0.0,
-  align=right
-]{ By Ulrik S. Fjordholm@UiO <ulriksf@gmal.com>
-and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
-and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
-and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: 238974b5851cadf9648a4f07c3b8adfc38f58311
-Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-060-15};
 \end{axis}
 
 \end{tikzpicture}
 
 %% INCLUDE THE COMMENTS AT THE END WHEN COPYING
 %%%%%%%%%%%%%TITLE%%%%%%%%%%%%%%%%%
-%% None
+%% Wasserstein convergence for Brownian motion
+%% for second correlation marginal
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% script name: WassersteinDistances.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
@@ -90,7 +66,7 @@ Hostname: eu-c7-060-15};
 %% GIT git_short_commit : 2389
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
 %% hostname : eu-c7-060-15
-%% generated_on_date : 2019-03-21 20:38:25.569781
+%% generated_on_date : 2019-03-22 03:28:40.388323
 %% accessed_environment:
 %%    STATISTICAL_RESOLUTIONS=/cluster/project/sam/klye/systemspaperdata/
 %%    STATISTICAL_KH_RESOLUTIONS_METHODS=/cluster/project/sam/klye/systemspaperdata/scheme/
@@ -1428,12 +1404,12 @@ Hostname: eu-c7-060-15};
 %%     PIL.JpegPresets: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/PIL/JpegPresets.py)
 %%     PIL.PpmImagePlugin: 0.2 (/cluster/home/klye/.local/lib/python3.6/site-packages/PIL/PpmImagePlugin.py)
 %%     PIL.PngImagePlugin: 0.9 (/cluster/home/klye/.local/lib/python3.6/site-packages/PIL/PngImagePlugin.py)
+%%     zmq.utils.garbage: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/zmq/utils/garbage.py)
 %% stacktrace:
 %%     [function: savePlot, line: 253, file: ../python/plot_info.py]
-%%     [function: savePlot, line: 286, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 296, file: ../python/plot_info.py]
 %%     [function: plotWassersteinConvergence, line: 88, file: <ipython-input-4-981831161fac>]
-%%     [function: <module>, line: 13, file: <ipython-input-5-53a376f8e3a4>]
+%%     [function: <module>, line: 11, file: <ipython-input-7-4a3e6191ca5f>]
 %%     [function: run_code, line: 3291, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3209, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3044, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
