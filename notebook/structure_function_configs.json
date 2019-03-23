@@ -27,6 +27,7 @@
             "ux",
             "uy"
         ],
+	"stat_filename" : "kh_daint/samples_kelvinhelmholtz_{perturbation}_{resolution}/kh_{stat}_{t}.nc",
         "cube_filename": "kh_daint/samples_kelvinhelmholtz_{perturbation}_{resolution}/kh_cube_structure_cube_{p}.000000_{t}.nc",
         "basic_filename": "kh_daint/samples_kelvinhelmholtz_{perturbation}_{resolution}/kh_{direction}_structure_basic_{p}.000000_{t}.nc"
     },
