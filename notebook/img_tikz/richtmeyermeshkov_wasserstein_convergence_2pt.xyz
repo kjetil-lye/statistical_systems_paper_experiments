@@ -38,15 +38,15 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: 238974b5851cadf9648a4f07c3b8adfc38f58311
+Commit: ee4bff37189d950a9fbf94661900bc5809b62b72
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-060-15};
+Hostname: eu-c7-041-05};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=black,
   rotate=0.0
-]{ @2389};
+]{ @ee4bf};
 \end{axis}
 
 \end{tikzpicture}
@@ -59,14 +59,14 @@ Hostname: eu-c7-060-15};
 %% script name: WassersteinDistances.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 238974b5851cadf9648a4f07c3b8adfc38f58311
+%% GIT git_commit : ee4bff37189d950a9fbf94661900bc5809b62b72
 %% GIT git_repo_modified : False
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : 2389
+%% GIT git_short_commit : ee4bf
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-c7-060-15
-%% generated_on_date : 2019-03-22 00:06:51.826111
+%% hostname : eu-c7-041-05
+%% generated_on_date : 2019-03-22 09:08:35.367139
 %% accessed_environment:
 %%    STATISTICAL_RESOLUTIONS=/cluster/project/sam/klye/systemspaperdata/
 %%    STATISTICAL_KH_RESOLUTIONS_METHODS=/cluster/project/sam/klye/systemspaperdata/scheme/
