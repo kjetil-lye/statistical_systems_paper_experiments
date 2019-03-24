@@ -192,6 +192,7 @@ def savePlot(name):
     ax = plt.gca()
     gitMetadata = get_git_metadata()
     informationText = 'By Ulrik S. Fjordholm@UiO <ulriksf@gmal.com>\nand Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>\nand Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>\nand Franziska Weber@CMU <franzisw@andrew.cmu.edu>\nCommit: %s\nRepo: %s\nHostname: %s' % (gitMetadata['git_commit'], gitMetadata['git_remote_url'], socket.gethostname())
+    textcolor='gray'
 
     # we also have some 3d plots, which we need to use a special text function,
     # see https://matplotlib.org/examples/mplot3d/text3d_demo.html
@@ -202,7 +203,7 @@ def savePlot(name):
     try:
         
         text_function(0.95, 0.01, informationText,
-                fontsize=3, color='gray',
+                fontsize=3, color=textcolor,
                 ha='right', va='bottom', alpha=0.5, transform=ax.transAxes)
     except:
         # This doesn't always work for 3d plots
@@ -212,7 +213,7 @@ def savePlot(name):
         try:
             if not name.endswith("_notitle"):
                 text_function(0.2, 0.93, "@" + gitMetadata['git_short_commit'], fontsize=10,
-                        ha='right', va='bottom', alpha=0.5, transform=ax.transAxes)
+                              ha='right', va='bottom', color=textcolor, alpha=0.5, transform=ax.transAxes)
         except:
             # 3d plots had some issues with the text attribute
             pass
