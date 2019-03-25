@@ -19,7 +19,7 @@ y grid style={white!69.01960784313725!black},
 ylabel={$y$},
 ymin=0, ymax=1
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {eulervariance_kelvinhelmholtz_512_00750_1-010.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {eulervariance_kelvinhelmholtz_512_00750_1-013.png};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -30,7 +30,7 @@ ymin=0, ymax=1
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: 08af86f44bd565ce0314a99bcd32383515d3a019
+Commit: c449dfca52a6638d537479374567a4cf0ec8e8f2
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
 Hostname: eu-login-08-ng};
 \node at (axis cs:0.2,0.93)[
@@ -38,7 +38,7 @@ Hostname: eu-login-08-ng};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @08af8};
+]{ @c449d};
 \end{axis}
 
 \end{tikzpicture}
@@ -50,14 +50,14 @@ Hostname: eu-login-08-ng};
 %% script name: StructureAlsvinn.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 08af86f44bd565ce0314a99bcd32383515d3a019
+%% GIT git_commit : c449dfca52a6638d537479374567a4cf0ec8e8f2
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : 08af8
+%% GIT git_short_commit : c449d
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
 %% hostname : eu-login-08-ng
-%% generated_on_date : 2019-03-25 17:52:16.967934
+%% generated_on_date : 2019-03-25 20:48:04.248839
 %% accessed_environment:
 %%    STATISTICAL_STRUCTURE=/cluster/project/sam/klye/systemspaperdata/
 %% python_version: 
