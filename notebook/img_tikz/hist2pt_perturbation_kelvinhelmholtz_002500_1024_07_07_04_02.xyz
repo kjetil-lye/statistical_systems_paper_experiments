@@ -20,7 +20,7 @@ y grid style={white!69.01960784313725!black},
 ylabel={Value of $\rho(0.40,0.20)$},
 ymin=0.827151085181628, ymax=2.32789664003285
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0.827151085181628, xmax=2.32789664003285, ymin=0.827151085181628, ymax=2.32789664003285] {hist2pt_perturbation_kelvinhelmholtz_002500_1024_07_07_04_02-001.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0.827151085181628, xmax=2.32789664003285, ymin=0.827151085181628, ymax=2.32789664003285] {hist2pt_perturbation_kelvinhelmholtz_002500_1024_07_07_04_02-002.png};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -31,15 +31,15 @@ ymin=0.827151085181628, ymax=2.32789664003285
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: ee4bff37189d950a9fbf94661900bc5809b62b72
+Commit: 54f74b2057ad364fa9b2dbd7eb97afba75a973e4
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-056-11};
+Hostname: eu-c7-074-08};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=black,
   rotate=0.0
-]{ @ee4bf};
+]{ @54f7};
 \end{axis}
 
 \end{tikzpicture}
@@ -52,14 +52,14 @@ Hostname: eu-c7-056-11};
 %% script name: WassersteinDistancesPerturbationsAll.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : ee4bff37189d950a9fbf94661900bc5809b62b72
-%% GIT git_repo_modified : True
+%% GIT git_commit : 54f74b2057ad364fa9b2dbd7eb97afba75a973e4
+%% GIT git_repo_modified : False
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : ee4bf
+%% GIT git_short_commit : 54f7
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-c7-056-11
-%% generated_on_date : 2019-03-22 15:30:26.476646
+%% hostname : eu-c7-074-08
+%% generated_on_date : 2019-03-25 01:05:41.990910
 %% accessed_environment:
 %%    STATISTICAL_KH_PERTS=/cluster/project/sam/klye/systemspaperdata/
 %%    STATISTICAL_KH_PERTS_NORMAL_UNIFORM=/cluster/project/sam/klye/systemspaperdata/perturbation/

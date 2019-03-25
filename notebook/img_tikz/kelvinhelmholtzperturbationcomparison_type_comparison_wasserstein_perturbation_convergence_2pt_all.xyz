@@ -8,7 +8,7 @@ height=\figureheight,
 tick align=outside,
 tick pos=left,
 title={Wasserstein convergence for Kelvin-Helmholtz Perturbation comparison
-for first correlation measure,
+for second correlation measure,
 with respect to perturbation size
 against a reference solution with $\epsilon_0=0.0025$},
 width=\figurewidth,
@@ -17,19 +17,19 @@ xlabel={Perturbation $\epsilon$},
 xmin=0.00158643046163327, xmax=0.153893051668115,
 xmode=log,
 y grid style={white!69.01960784313725!black},
-ylabel={$||W_1(\nu^{1, \Delta x, \epsilon}_{\mathrm{normal}}, \nu^{1,\Delta x, \epsilon_0}_{\mathrm{uniform}})||_{L^1(D)}$},
-ymin=0.000776495135896975, ymax=0.120361453262487,
+ylabel={$||W_1(\nu^{2, \Delta x, \epsilon}_{\mathrm{normal}}, \nu^{2,\Delta x, \epsilon_0}_{\mathrm{uniform}})||_{L^1(D\times D)}$},
+ymin=0.00109812995230236, ymax=0.170216799590739,
 ymode=log
 ]
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}, forget plot]
 table [row sep=\\]{%
-0.125	0.095703125 \\
-0.0625	0.052734375 \\
-0.03125	0.0244140625 \\
-0.015625	0.009765625 \\
-0.0078125	0.001953125 \\
-0.00390625	0.0009765625 \\
-0.001953125	0.0009765625 \\
+0.125	0.135344657336484 \\
+0.0625	0.0745776683282805 \\
+0.03125	0.0345266983001175 \\
+0.015625	0.0138106793200476 \\
+0.0078125	0.00276213586401022 \\
+0.00390625	0.00138106793200511 \\
+0.001953125	0.00138106793200511 \\
 };
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
@@ -41,15 +41,15 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: ee4bff37189d950a9fbf94661900bc5809b62b72
+Commit: 54f74b2057ad364fa9b2dbd7eb97afba75a973e4
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-056-11};
+Hostname: eu-c7-074-08};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=black,
   rotate=0.0
-]{ @ee4bf};
+]{ @54f7};
 \end{axis}
 
 \end{tikzpicture}
@@ -57,21 +57,21 @@ Hostname: eu-c7-056-11};
 %% INCLUDE THE COMMENTS AT THE END WHEN COPYING
 %%%%%%%%%%%%%TITLE%%%%%%%%%%%%%%%%%
 %% Wasserstein convergence for Kelvin-Helmholtz Perturbation comparison
-%% for first correlation measure,
+%% for second correlation measure,
 %% with respect to perturbation size
 %% against a reference solution with $\epsilon_0=0.0025$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% script name: WassersteinDistancesPerturbationsAll.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : ee4bff37189d950a9fbf94661900bc5809b62b72
-%% GIT git_repo_modified : True
+%% GIT git_commit : 54f74b2057ad364fa9b2dbd7eb97afba75a973e4
+%% GIT git_repo_modified : False
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : ee4bf
+%% GIT git_short_commit : 54f7
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-c7-056-11
-%% generated_on_date : 2019-03-22 19:50:04.040432
+%% hostname : eu-c7-074-08
+%% generated_on_date : 2019-03-25 04:16:57.937373
 %% accessed_environment:
 %%    STATISTICAL_KH_PERTS=/cluster/project/sam/klye/systemspaperdata/
 %%    STATISTICAL_KH_PERTS_NORMAL_UNIFORM=/cluster/project/sam/klye/systemspaperdata/perturbation/
@@ -1413,7 +1413,7 @@ Hostname: eu-c7-056-11};
 %% stacktrace:
 %%     [function: savePlot, line: 253, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 296, file: ../python/plot_info.py]
-%%     [function: plotWassersteinConvergenceDifferentTypes, line: 167, file: <ipython-input-4-be3bef8463f5>]
+%%     [function: plotWassersteinConvergenceDifferentTypes, line: 139, file: <ipython-input-4-be3bef8463f5>]
 %%     [function: <module>, line: 32, file: <ipython-input-6-ea83fdaff219>]
 %%     [function: run_code, line: 3291, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3215, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]

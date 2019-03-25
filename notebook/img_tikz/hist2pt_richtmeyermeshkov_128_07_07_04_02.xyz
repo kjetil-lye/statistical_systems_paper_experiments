@@ -20,7 +20,7 @@ y grid style={white!69.01960784313725!black},
 ylabel={Value of $\rho(0.40,0.20)$},
 ymin=0.300979549006013, ymax=2.14897709278524
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0.300979549006013, xmax=2.14897709278524, ymin=0.300979549006013, ymax=2.14897709278524] {hist2pt_richtmeyermeshkov_128_07_07_04_02-002.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0.300979549006013, xmax=2.14897709278524, ymin=0.300979549006013, ymax=2.14897709278524] {hist2pt_richtmeyermeshkov_128_07_07_04_02-003.png};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -31,15 +31,15 @@ ymin=0.300979549006013, ymax=2.14897709278524
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: ee4bff37189d950a9fbf94661900bc5809b62b72
+Commit: 84122d85dbac56800a7d064e2e95d3a34ae516bb
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-041-05};
+Hostname: eu-c7-108-14};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
-  text=black,
+  text=white!50.19607843137255!black,
   rotate=0.0
-]{ @ee4bf};
+]{ @84122};
 \end{axis}
 
 \end{tikzpicture}
@@ -52,17 +52,17 @@ Hostname: eu-c7-041-05};
 %% script name: WassersteinDistances.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : ee4bff37189d950a9fbf94661900bc5809b62b72
+%% GIT git_commit : 84122d85dbac56800a7d064e2e95d3a34ae516bb
 %% GIT git_repo_modified : False
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : ee4bf
+%% GIT git_short_commit : 84122
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-c7-041-05
-%% generated_on_date : 2019-03-22 09:36:43.706025
+%% hostname : eu-c7-108-14
+%% generated_on_date : 2019-03-25 01:44:06.930636
 %% accessed_environment:
 %%    STATISTICAL_RESOLUTIONS=/cluster/project/sam/klye/systemspaperdata/
-%%    STATISTICAL_KH_RESOLUTIONS_METHODS=/cluster/project/sam/klye/systemspaperdata/scheme/
+%%    STATISTICAL_KH_RESOLUTIONS_METHODS=/cluster/project/sam/klye/systemspaperdata/scheme
 %% python_version: 
 %%    /cluster/spack/apps/linux-centos7-x86_64/gcc-4.8.5/python-3.6.4-fffplms6xkieepdm3axllnzhdl4p672i/bin/python3.6 (Version: 3.6.4 (default, May 30 2018, 16:33:35) 
 %%    [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)])
@@ -1399,9 +1399,9 @@ Hostname: eu-c7-041-05};
 %%     PIL.PngImagePlugin: 0.9 (/cluster/home/klye/.local/lib/python3.6/site-packages/PIL/PngImagePlugin.py)
 %%     zmq.utils.garbage: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/zmq/utils/garbage.py)
 %% stacktrace:
-%%     [function: savePlot, line: 253, file: ../python/plot_info.py]
-%%     [function: showAndSave, line: 296, file: ../python/plot_info.py]
-%%     [function: plot_histograms2, line: 13, file: <ipython-input-2-3dcb1bcac9da>]
+%%     [function: savePlot, line: 262, file: ../python/plot_info.py]
+%%     [function: showAndSave, line: 305, file: ../python/plot_info.py]
+%%     [function: plot_histograms2, line: 13, file: <ipython-input-2-000c8086e5af>]
 %%     [function: plotHistograms, line: 58, file: <ipython-input-3-678af00b2d98>]
 %%     [function: <module>, line: 13, file: <ipython-input-6-825f91e9072b>]
 %%     [function: run_code, line: 3291, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]

@@ -54,7 +54,6 @@ yticklabels={$\mathdefault{10^{-3}}$,$\mathdefault{10^{-2}}$,$\mathdefault{10^{-
 \addlegendimage{no markers, color5}
 \addplot [semithick, color0]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.091802345620684 \\
 0.00201612903225806	0.114010086905881 \\
 0.0030241935483871	0.131580671585404 \\
@@ -89,7 +88,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color1, dashed]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0839231314627343 \\
 0.00201612903225806	0.112334000879316 \\
 0.0030241935483871	0.133224703728584 \\
@@ -124,7 +122,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color2]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0883990553979155 \\
 0.00201612903225806	0.108959916328866 \\
 0.0030241935483871	0.125381335107708 \\
@@ -159,7 +156,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color3, dashed]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0801860202764136 \\
 0.00201612903225806	0.10720844404785 \\
 0.0030241935483871	0.127060484873388 \\
@@ -194,7 +190,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color4]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.085388812902332 \\
 0.00201612903225806	0.104500600400254 \\
 0.0030241935483871	0.119962434096645 \\
@@ -229,7 +224,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color5, dashed]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0768403755026161 \\
 0.00201612903225806	0.102701981324651 \\
 0.0030241935483871	0.121696437089621 \\
@@ -264,7 +258,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color6]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0827121381701541 \\
 0.00201612903225806	0.100951198486339 \\
 0.0030241935483871	0.115869131670224 \\
@@ -299,7 +292,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, white!49.80392156862745!black, dashed]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0741162249472488 \\
 0.00201612903225806	0.0991974554625461 \\
 0.0030241935483871	0.11763845751453 \\
@@ -334,7 +326,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color7]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0811062408923692 \\
 0.00201612903225806	0.0995033515423669 \\
 0.0030241935483871	0.114446947758279 \\
@@ -369,7 +360,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color8, dashed]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0729475251130993 \\
 0.00201612903225806	0.0977968719072866 \\
 0.0030241935483871	0.116091150335746 \\
@@ -404,7 +394,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color0]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0808353499703329 \\
 0.00201612903225806	0.0992912131191823 \\
 0.0030241935483871	0.11426928014374 \\
@@ -439,7 +428,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color1, dashed]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0727794009046148 \\
 0.00201612903225806	0.0976078145931308 \\
 0.0030241935483871	0.115891967229415 \\
@@ -474,7 +462,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color2]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0805646896165332 \\
 0.00201612903225806	0.0990797614555649 \\
 0.0030241935483871	0.114093524646056 \\
@@ -509,7 +496,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color3, dashed]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0726112838072281 \\
 0.00201612903225806	0.0974233668284908 \\
 0.0030241935483871	0.115701469008806 \\
@@ -544,7 +530,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color4]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0802929217771766 \\
 0.00201612903225806	0.0988678339922707 \\
 0.0030241935483871	0.113917591340577 \\
@@ -579,7 +564,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color5, dashed]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0724377841392821 \\
 0.00201612903225806	0.0972373510281774 \\
 0.0030241935483871	0.115513058254382 \\
@@ -634,7 +618,7 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: b14a1a32e95624acdf9c9b8b0f7f61df0a68417d
+Commit: d50f91ed05c0406838591523a6f7354ad5fe5ed9
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
 Hostname: eu-login-08-ng};
 \node at (axis cs:0.2,0.93)[
@@ -642,7 +626,7 @@ Hostname: eu-login-08-ng};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @b14a1};
+]{ @d50f};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -653,7 +637,7 @@ Hostname: eu-login-08-ng};
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: b14a1a32e95624acdf9c9b8b0f7f61df0a68417d
+Commit: d50f91ed05c0406838591523a6f7354ad5fe5ed9
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
 Hostname: eu-login-08-ng};
 \end{axis}
@@ -667,14 +651,14 @@ Hostname: eu-login-08-ng};
 %% script name: StructureAlsvinn.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : b14a1a32e95624acdf9c9b8b0f7f61df0a68417d
+%% GIT git_commit : d50f91ed05c0406838591523a6f7354ad5fe5ed9
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : b14a1
+%% GIT git_short_commit : d50f
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
 %% hostname : eu-login-08-ng
-%% generated_on_date : 2019-03-24 22:56:34.571864
+%% generated_on_date : 2019-03-25 02:00:40.334176
 %% accessed_environment:
 %%    STATISTICAL_STRUCTURE=/cluster/project/sam/klye/systemspaperdata/
 %% python_version: 
