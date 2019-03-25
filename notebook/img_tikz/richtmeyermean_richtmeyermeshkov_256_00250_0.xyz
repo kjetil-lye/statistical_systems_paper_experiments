@@ -19,7 +19,7 @@ y grid style={white!69.01960784313725!black},
 ylabel={$y$},
 ymin=0, ymax=1
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {richtmeyermean_richtmeyermeshkov_256_00250_0-006.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {richtmeyermean_richtmeyermeshkov_256_00250_0-010.png};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -30,7 +30,7 @@ ymin=0, ymax=1
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: d50f91ed05c0406838591523a6f7354ad5fe5ed9
+Commit: 08af86f44bd565ce0314a99bcd32383515d3a019
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
 Hostname: eu-login-08-ng};
 \node at (axis cs:0.2,0.93)[
@@ -38,7 +38,7 @@ Hostname: eu-login-08-ng};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @d50f};
+]{ @08af8};
 \end{axis}
 
 \end{tikzpicture}
@@ -50,14 +50,14 @@ Hostname: eu-login-08-ng};
 %% script name: StructureAlsvinn.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : d50f91ed05c0406838591523a6f7354ad5fe5ed9
+%% GIT git_commit : 08af86f44bd565ce0314a99bcd32383515d3a019
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : d50f
+%% GIT git_short_commit : 08af8
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
 %% hostname : eu-login-08-ng
-%% generated_on_date : 2019-03-25 01:40:44.180961
+%% generated_on_date : 2019-03-25 18:02:15.958389
 %% accessed_environment:
 %%    STATISTICAL_STRUCTURE=/cluster/project/sam/klye/systemspaperdata/
 %% python_version: 
@@ -1122,7 +1122,7 @@ Hostname: eu-login-08-ng};
 %%     [function: savePlot, line: 262, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 305, file: ../python/plot_info.py]
 %%     [function: plot_mean_var_convergence, line: 53, file: <ipython-input-4-802da8273da6>]
-%%     [function: for_each_config, line: 32, file: <ipython-input-1-4ae6a2d04077>]
+%%     [function: for_each_config, line: 33, file: <ipython-input-1-0c33d365086c>]
 %%     [function: <module>, line: 73, file: <ipython-input-4-802da8273da6>]
 %%     [function: run_code, line: 3291, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3215, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]

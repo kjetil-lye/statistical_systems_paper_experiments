@@ -43,21 +43,18 @@ ymode=log
 \addlegendimage{no markers, color8}
 \addplot [semithick, color0]
 table [row sep=\\]{%
-0	0 \\
 0.0104166666666667	0.123277143687994 \\
 0.0208333333333333	0.17687611835067 \\
 0.03125	0.224739089046881 \\
 };
 \addplot [semithick, color1, dashed]
 table [row sep=\\]{%
-0	0 \\
 0.0104166666666667	0.122748598509106 \\
 0.0208333333333333	0.17894732221676 \\
 0.03125	0.223094381053829 \\
 };
 \addplot [semithick, color2]
 table [row sep=\\]{%
-0	0 \\
 0.00446428571428571	0.0868198875934433 \\
 0.00892857142857143	0.125734178216025 \\
 0.0133928571428571	0.160899535878307 \\
@@ -68,7 +65,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color3, dashed]
 table [row sep=\\]{%
-0	0 \\
 0.00446428571428571	0.0847553039124364 \\
 0.00892857142857143	0.128535666181378 \\
 0.0133928571428571	0.163990269520346 \\
@@ -79,7 +75,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color4]
 table [row sep=\\]{%
-0	0 \\
 0.00208333333333333	0.0597157450866527 \\
 0.00416666666666667	0.087136268771417 \\
 0.00625	0.1122647833458 \\
@@ -98,7 +93,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color5, dashed]
 table [row sep=\\]{%
-0	0 \\
 0.00208333333333333	0.057378513412819 \\
 0.00416666666666667	0.0889782747836481 \\
 0.00625	0.115011066015067 \\
@@ -117,7 +111,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color6]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0441507904582499 \\
 0.00201612903225806	0.0648379865227936 \\
 0.0030241935483871	0.083951923572334 \\
@@ -152,7 +145,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, white!49.80392156862745!black, dashed]
 table [row sep=\\]{%
-0	0 \\
 0.00100806451612903	0.0433829657012419 \\
 0.00201612903225806	0.0671003712301721 \\
 0.0030241935483871	0.0866004495102527 \\
@@ -187,7 +179,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color7]
 table [row sep=\\]{%
-0	0 \\
 0.000496031746031746	0.0337264915221217 \\
 0.000992063492063492	0.0497933836646905 \\
 0.00148809523809524	0.0647235674609607 \\
@@ -254,7 +245,6 @@ table [row sep=\\]{%
 };
 \addplot [semithick, color8, dashed]
 table [row sep=\\]{%
-0	0 \\
 0.000496031746031746	0.0359628235953142 \\
 0.000992063492063492	0.0543863748950751 \\
 0.00148809523809524	0.0692740579298315 \\
@@ -329,7 +319,7 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: b14a1a32e95624acdf9c9b8b0f7f61df0a68417d
+Commit: 08af86f44bd565ce0314a99bcd32383515d3a019
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
 Hostname: eu-login-08-ng};
 \node at (axis cs:0.2,0.93)[
@@ -337,7 +327,7 @@ Hostname: eu-login-08-ng};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @b14a1};
+]{ @08af8};
 \end{axis}
 
 \end{tikzpicture}
@@ -349,14 +339,14 @@ Hostname: eu-login-08-ng};
 %% script name: StructureAlsvinn.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : b14a1a32e95624acdf9c9b8b0f7f61df0a68417d
+%% GIT git_commit : 08af86f44bd565ce0314a99bcd32383515d3a019
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : b14a1
+%% GIT git_short_commit : 08af8
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
 %% hostname : eu-login-08-ng
-%% generated_on_date : 2019-03-24 22:44:30.876409
+%% generated_on_date : 2019-03-25 18:14:39.486504
 %% accessed_environment:
 %%    STATISTICAL_STRUCTURE=/cluster/project/sam/klye/systemspaperdata/
 %% python_version: 
@@ -1420,9 +1410,9 @@ Hostname: eu-login-08-ng};
 %% stacktrace:
 %%     [function: savePlot, line: 262, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 305, file: ../python/plot_info.py]
-%%     [function: convergence_structure_functions, line: 48, file: <ipython-input-5-3482525540a3>]
-%%     [function: for_each_config, line: 32, file: <ipython-input-1-4ae6a2d04077>]
-%%     [function: <module>, line: 64, file: <ipython-input-5-3482525540a3>]
+%%     [function: convergence_structure_functions, line: 56, file: <ipython-input-5-6480f99be130>]
+%%     [function: for_each_config, line: 33, file: <ipython-input-1-0c33d365086c>]
+%%     [function: <module>, line: 74, file: <ipython-input-5-6480f99be130>]
 %%     [function: run_code, line: 3291, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3215, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3044, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
