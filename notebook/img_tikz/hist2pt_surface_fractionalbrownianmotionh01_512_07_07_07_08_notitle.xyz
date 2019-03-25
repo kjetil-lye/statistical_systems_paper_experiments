@@ -2194,14 +2194,14 @@ ymin=-0.196694743054603, ymax=16.5463075481559
 %% script name: WassersteinDistances.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 3341e5c9e54b4529104ae2dfaa441cce65e234d2
-%% GIT git_repo_modified : True
+%% GIT git_commit : 89f26dd42777f315c8ffa657ce3b192265533b57
+%% GIT git_repo_modified : False
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : 3341e
+%% GIT git_short_commit : 89f26
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-c7-105-16
-%% generated_on_date : 2019-03-25 10:02:51.370182
+%% hostname : eu-a6-010-15
+%% generated_on_date : 2019-03-25 18:54:32.574873
 %% accessed_environment:
 %%    STATISTICAL_RESOLUTIONS=/cluster/project/sam/klye/systemspaperdata/
 %%    STATISTICAL_KH_RESOLUTIONS_METHODS=/cluster/project/sam/klye/systemspaperdata/scheme
