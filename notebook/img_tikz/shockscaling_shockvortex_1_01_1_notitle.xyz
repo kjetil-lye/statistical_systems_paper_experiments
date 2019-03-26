@@ -210,7 +210,7 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: c449dfca52a6638d537479374567a4cf0ec8e8f2
+Commit: f9e74a1eb046a6957a03323ba8c3e2c533206e98
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
 Hostname: eu-login-08-ng};
 \node at (axis cs:0.2,0.93)[
@@ -218,7 +218,7 @@ Hostname: eu-login-08-ng};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @c449d};
+]{ @f9e7};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -229,7 +229,7 @@ Hostname: eu-login-08-ng};
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: c449dfca52a6638d537479374567a4cf0ec8e8f2
+Commit: f9e74a1eb046a6957a03323ba8c3e2c533206e98
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
 Hostname: eu-login-08-ng};
 \end{axis}
@@ -243,14 +243,14 @@ Hostname: eu-login-08-ng};
 %% script name: StructureAlsvinn.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : c449dfca52a6638d537479374567a4cf0ec8e8f2
+%% GIT git_commit : f9e74a1eb046a6957a03323ba8c3e2c533206e98
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : c449d
+%% GIT git_short_commit : f9e7
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
 %% hostname : eu-login-08-ng
-%% generated_on_date : 2019-03-25 21:22:26.153102
+%% generated_on_date : 2019-03-26 01:38:56.043377
 %% accessed_environment:
 %%    STATISTICAL_STRUCTURE=/cluster/project/sam/klye/systemspaperdata/
 %% python_version: 

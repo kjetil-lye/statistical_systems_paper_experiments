@@ -38,15 +38,15 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: 89f26dd42777f315c8ffa657ce3b192265533b57
+Commit: c449dfca52a6638d537479374567a4cf0ec8e8f2
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-a6-010-15};
+Hostname: eu-c7-105-04};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @89f26};
+]{ @c449d};
 \end{axis}
 
 \end{tikzpicture}
@@ -59,14 +59,14 @@ Hostname: eu-a6-010-15};
 %% script name: WassersteinDistances.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 89f26dd42777f315c8ffa657ce3b192265533b57
-%% GIT git_repo_modified : False
+%% GIT git_commit : c449dfca52a6638d537479374567a4cf0ec8e8f2
+%% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : 89f26
+%% GIT git_short_commit : c449d
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-a6-010-15
-%% generated_on_date : 2019-03-25 18:45:00.850090
+%% hostname : eu-c7-105-04
+%% generated_on_date : 2019-03-26 01:56:54.527353
 %% accessed_environment:
 %%    STATISTICAL_RESOLUTIONS=/cluster/project/sam/klye/systemspaperdata/
 %%    STATISTICAL_KH_RESOLUTIONS_METHODS=/cluster/project/sam/klye/systemspaperdata/scheme
@@ -1408,7 +1408,7 @@ Hostname: eu-a6-010-15};
 %% stacktrace:
 %%     [function: savePlot, line: 262, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 305, file: ../python/plot_info.py]
-%%     [function: plotWassersteinConvergence, line: 113, file: <ipython-input-4-025f981c568b>]
+%%     [function: plotWassersteinConvergence, line: 113, file: <ipython-input-4-365b94959da9>]
 %%     [function: <module>, line: 11, file: <ipython-input-8-fa44a4a868f7>]
 %%     [function: run_code, line: 3291, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3209, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
