@@ -20,7 +20,7 @@ y grid style={white!69.01960784313725!black},
 ylabel={Value of $\rho(0.40,0.20)$},
 ymin=0.477351282442317, ymax=16.5863625775607
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0.477351282442317, xmax=16.5863625775607, ymin=0.477351282442317, ymax=16.5863625775607] {hist2pt_fractionalbrownianmotionh01_128_07_07_04_02-004.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0.477351282442317, xmax=16.5863625775607, ymin=0.477351282442317, ymax=16.5863625775607] {hist2pt_fractionalbrownianmotionh01_128_07_07_04_02-005.png};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -31,15 +31,15 @@ ymin=0.477351282442317, ymax=16.5863625775607
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: c449dfca52a6638d537479374567a4cf0ec8e8f2
+Commit: f60eceb2dce46b266ab0cfcc3d8c2efc6fec1660
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-105-04};
+Hostname: eu-c7-105-08};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @c449d};
+]{ @f60ec};
 \end{axis}
 
 \end{tikzpicture}
@@ -52,14 +52,14 @@ Hostname: eu-c7-105-04};
 %% script name: WassersteinDistances.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : c449dfca52a6638d537479374567a4cf0ec8e8f2
+%% GIT git_commit : f60eceb2dce46b266ab0cfcc3d8c2efc6fec1660
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : c449d
+%% GIT git_short_commit : f60ec
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-c7-105-04
-%% generated_on_date : 2019-03-26 02:09:06.298779
+%% hostname : eu-c7-105-08
+%% generated_on_date : 2019-03-26 10:17:28.295296
 %% accessed_environment:
 %%    STATISTICAL_RESOLUTIONS=/cluster/project/sam/klye/systemspaperdata/
 %%    STATISTICAL_KH_RESOLUTIONS_METHODS=/cluster/project/sam/klye/systemspaperdata/scheme

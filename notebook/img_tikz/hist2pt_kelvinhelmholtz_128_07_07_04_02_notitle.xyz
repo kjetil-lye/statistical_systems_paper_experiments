@@ -22,7 +22,7 @@ ymin=0.841716505277624, ymax=2.25624384705702,
 ytick={0.8,1,1.2,1.4,1.6,1.8,2,2.2,2.4},
 yticklabels={0.8,1.0,1.2,1.4,1.6,1.8,2.0,2.2,2.4}
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0.841716505277624, xmax=2.25624384705702, ymin=0.841716505277624, ymax=2.25624384705702] {hist2pt_kelvinhelmholtz_128_07_07_04_02_notitle-006.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0.841716505277624, xmax=2.25624384705702, ymin=0.841716505277624, ymax=2.25624384705702] {hist2pt_kelvinhelmholtz_128_07_07_04_02_notitle-007.png};
 \path [draw=black, fill opacity=0] (axis cs:0,0.841716505277624)
 --(axis cs:0,2.25624384705702);
 
@@ -45,15 +45,15 @@ yticklabels={0.8,1.0,1.2,1.4,1.6,1.8,2.0,2.2,2.4}
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: c449dfca52a6638d537479374567a4cf0ec8e8f2
+Commit: f60eceb2dce46b266ab0cfcc3d8c2efc6fec1660
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-105-04};
+Hostname: eu-c7-105-08};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @c449d};
+]{ @f60ec};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -64,9 +64,9 @@ Hostname: eu-c7-105-04};
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: c449dfca52a6638d537479374567a4cf0ec8e8f2
+Commit: f60eceb2dce46b266ab0cfcc3d8c2efc6fec1660
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-105-04};
+Hostname: eu-c7-105-08};
 \end{axis}
 
 \end{tikzpicture}
@@ -78,14 +78,14 @@ Hostname: eu-c7-105-04};
 %% script name: WassersteinDistances.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : c449dfca52a6638d537479374567a4cf0ec8e8f2
+%% GIT git_commit : f60eceb2dce46b266ab0cfcc3d8c2efc6fec1660
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : c449d
+%% GIT git_short_commit : f60ec
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-c7-105-04
-%% generated_on_date : 2019-03-25 22:00:30.546400
+%% hostname : eu-c7-105-08
+%% generated_on_date : 2019-03-26 05:58:40.727133
 %% accessed_environment:
 %%    STATISTICAL_RESOLUTIONS=/cluster/project/sam/klye/systemspaperdata/
 %%    STATISTICAL_KH_RESOLUTIONS_METHODS=/cluster/project/sam/klye/systemspaperdata/scheme
