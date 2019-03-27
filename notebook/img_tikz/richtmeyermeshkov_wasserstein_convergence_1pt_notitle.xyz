@@ -50,15 +50,15 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: f60eceb2dce46b266ab0cfcc3d8c2efc6fec1660
+Commit: cf42084ea5fc757d69ecfc6e712c827603988b05
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-105-08};
+Hostname: eu-c7-041-03};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @f60ec};
+]{ @cf42};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -69,9 +69,9 @@ Hostname: eu-c7-105-08};
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: f60eceb2dce46b266ab0cfcc3d8c2efc6fec1660
+Commit: cf42084ea5fc757d69ecfc6e712c827603988b05
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-105-08};
+Hostname: eu-c7-041-03};
 \end{axis}
 
 \end{tikzpicture}
@@ -83,14 +83,14 @@ Hostname: eu-c7-105-08};
 %% script name: WassersteinDistances.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : f60eceb2dce46b266ab0cfcc3d8c2efc6fec1660
+%% GIT git_commit : cf42084ea5fc757d69ecfc6e712c827603988b05
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : f60ec
+%% GIT git_short_commit : cf42
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-c7-105-08
-%% generated_on_date : 2019-03-26 07:18:31.449426
+%% hostname : eu-c7-041-03
+%% generated_on_date : 2019-03-26 23:09:53.298572
 %% accessed_environment:
 %%    STATISTICAL_RESOLUTIONS=/cluster/project/sam/klye/systemspaperdata/
 %%    STATISTICAL_KH_RESOLUTIONS_METHODS=/cluster/project/sam/klye/systemspaperdata/scheme
@@ -1433,7 +1433,7 @@ Hostname: eu-c7-105-08};
 %%     [function: savePlot, line: 262, file: ../python/plot_info.py]
 %%     [function: savePlot, line: 295, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 305, file: ../python/plot_info.py]
-%%     [function: plotWassersteinConvergence, line: 113, file: <ipython-input-4-b96da59c5a97>]
+%%     [function: plotWassersteinConvergence, line: 113, file: <ipython-input-4-f3af81a8ea34>]
 %%     [function: <module>, line: 11, file: <ipython-input-6-825f91e9072b>]
 %%     [function: run_code, line: 3291, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3209, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
