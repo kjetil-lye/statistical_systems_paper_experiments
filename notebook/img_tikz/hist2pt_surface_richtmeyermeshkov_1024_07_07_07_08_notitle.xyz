@@ -2194,17 +2194,17 @@ ymin=0.204834547165836, ymax=2.32002458764973
 %% script name: WassersteinDistances.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : cf42084ea5fc757d69ecfc6e712c827603988b05
-%% GIT git_repo_modified : True
+%% GIT git_commit : 2df12cc13ddfe393f0bb53b9145d4b5ed9c625a4
+%% GIT git_repo_modified : False
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : cf42
+%% GIT git_short_commit : 2df12
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-c7-041-03
-%% generated_on_date : 2019-03-26 23:22:15.026142
+%% hostname : eu-a6-001-02
+%% generated_on_date : 2019-03-30 22:02:24.953532
 %% accessed_environment:
-%%    STATISTICAL_RESOLUTIONS=/cluster/project/sam/klye/systemspaperdata/
-%%    STATISTICAL_KH_RESOLUTIONS_METHODS=/cluster/project/sam/klye/systemspaperdata/scheme
+%%    STATISTICAL_RESOLUTIONS=/cluster/project/sam/klye/systemspaperdata
+%%    STATISTICAL_KH_RESOLUTIONS_METHODS=/cluster/project/sam/klye/systemspaperdata/scheme/
 %% python_version: 
 %%    /cluster/spack/apps/linux-centos7-x86_64/gcc-4.8.5/python-3.6.4-fffplms6xkieepdm3axllnzhdl4p672i/bin/python3.6 (Version: 3.6.4 (default, May 30 2018, 16:33:35) 
 %%    [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)])

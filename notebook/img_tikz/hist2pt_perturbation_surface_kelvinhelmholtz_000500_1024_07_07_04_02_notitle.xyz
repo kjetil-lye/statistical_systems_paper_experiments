@@ -2198,14 +2198,14 @@ yticklabels={0.6,1.4,2.2}
 %% script name: WassersteinDistancesPerturbationsAll.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : f9e74a1eb046a6957a03323ba8c3e2c533206e98
+%% GIT git_commit : 2df12cc13ddfe393f0bb53b9145d4b5ed9c625a4
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : f9e7
+%% GIT git_short_commit : 2df12
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-c7-108-04
-%% generated_on_date : 2019-03-26 06:13:44.677419
+%% hostname : eu-c7-056-11
+%% generated_on_date : 2019-03-31 05:43:46.011329
 %% accessed_environment:
 %%    STATISTICAL_KH_PERTS=/cluster/project/sam/klye/systemspaperdata/
 %%    STATISTICAL_KH_PERTS_NORMAL_UNIFORM=/cluster/project/sam/klye/systemspaperdata/perturbation/
