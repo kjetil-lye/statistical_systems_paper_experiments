@@ -16,24 +16,24 @@ xtick={64,128,256,512,1024},
 xticklabels={$64 \times 64$,$128 \times 128$,$256 \times 256$,$512 \times 512$,$1024 \times 1024$},
 y grid style={white!69.01960784313725!black},
 ylabel={$||W_1(\nu^{1, \Delta x}_{\mathrm{MC}}, \nu^{1,\Delta x/2}_{\mathrm{WENO2}})||_{L^1(D)}$},
-ymin=0.891250938133746, ymax=11.2201845430196,
+ymin=0.0104240299016616, ymax=0.0529168521175908,
 ymode=log,
-ytick={0.25,0.5,1,2,4,8,16,32},
-yticklabels={$\mathdefault{2^{-2}}$,$\mathdefault{2^{-1}}$,$\mathdefault{2^{0}}$,$\mathdefault{2^{1}}$,$\mathdefault{2^{2}}$,$\mathdefault{2^{3}}$,$\mathdefault{2^{4}}$,$\mathdefault{2^{5}}$}
+ytick={0.00390625,0.0078125,0.015625,0.03125,0.0625,0.125},
+yticklabels={$\mathdefault{2^{-8}}$,$\mathdefault{2^{-7}}$,$\mathdefault{2^{-6}}$,$\mathdefault{2^{-5}}$,$\mathdefault{2^{-4}}$,$\mathdefault{2^{-3}}$}
 ]
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}, forget plot]
 table [row sep=\\]{%
-64	0 \\
-128	0 \\
-256	0 \\
-512	0 \\
-1024	0 \\
+64	0.0491499598101741 \\
+128	0.0287898982570946 \\
+256	0.0208155235859847 \\
+512	0.0164454288683859 \\
+1024	0.0112229359068853 \\
 };
-\path [draw=black, fill opacity=0] (axis cs:0,0.891250938133746)
---(axis cs:0,11.2201845430196);
+\path [draw=black, fill opacity=0] (axis cs:0,0.0104240299016616)
+--(axis cs:0,0.0529168521175908);
 
-\path [draw=black, fill opacity=0] (axis cs:1,0.891250938133746)
---(axis cs:1,11.2201845430196);
+\path [draw=black, fill opacity=0] (axis cs:1,0.0104240299016616)
+--(axis cs:1,0.0529168521175908);
 
 \path [draw=black, fill opacity=0] (axis cs:55.7152360509519,0)
 --(axis cs:1176.26711551696,0);
@@ -51,15 +51,15 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: cf42084ea5fc757d69ecfc6e712c827603988b05
+Commit: 2df12cc13ddfe393f0bb53b9145d4b5ed9c625a4
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-041-03};
+Hostname: eu-a6-001-02};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @cf42};
+]{ @2df12};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -70,9 +70,9 @@ Hostname: eu-c7-041-03};
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: cf42084ea5fc757d69ecfc6e712c827603988b05
+Commit: 2df12cc13ddfe393f0bb53b9145d4b5ed9c625a4
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-041-03};
+Hostname: eu-a6-001-02};
 \end{axis}
 
 \end{tikzpicture}
@@ -84,17 +84,17 @@ Hostname: eu-c7-041-03};
 %% script name: WassersteinDistances.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : cf42084ea5fc757d69ecfc6e712c827603988b05
-%% GIT git_repo_modified : True
+%% GIT git_commit : 2df12cc13ddfe393f0bb53b9145d4b5ed9c625a4
+%% GIT git_repo_modified : False
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : cf42
+%% GIT git_short_commit : 2df12
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-c7-041-03
-%% generated_on_date : 2019-03-27 02:43:48.075874
+%% hostname : eu-a6-001-02
+%% generated_on_date : 2019-03-31 01:10:34.095962
 %% accessed_environment:
-%%    STATISTICAL_RESOLUTIONS=/cluster/project/sam/klye/systemspaperdata/
-%%    STATISTICAL_KH_RESOLUTIONS_METHODS=/cluster/project/sam/klye/systemspaperdata/scheme
+%%    STATISTICAL_RESOLUTIONS=/cluster/project/sam/klye/systemspaperdata
+%%    STATISTICAL_KH_RESOLUTIONS_METHODS=/cluster/project/sam/klye/systemspaperdata/scheme/
 %% python_version: 
 %%    /cluster/spack/apps/linux-centos7-x86_64/gcc-4.8.5/python-3.6.4-fffplms6xkieepdm3axllnzhdl4p672i/bin/python3.6 (Version: 3.6.4 (default, May 30 2018, 16:33:35) 
 %%    [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)])
