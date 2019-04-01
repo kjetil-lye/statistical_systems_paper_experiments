@@ -132,15 +132,15 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: 8de9f65098b7d419c46beb3aeb44e90a9b5a7552
+Commit: e7621fc3916f35dc11e10228ddcb2d62f1fe3711
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-login-10-ng};
+Hostname: eu-c7-064-09};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
-  text=black,
+  text=white!50.19607843137255!black,
   rotate=0.0
-]{ @8de9};
+]{ @e7621};
 \end{axis}
 
 \end{tikzpicture}
@@ -151,14 +151,14 @@ Hostname: eu-login-10-ng};
 %% script name: BV_experiments.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 8de9f65098b7d419c46beb3aeb44e90a9b5a7552
+%% GIT git_commit : e7621fc3916f35dc11e10228ddcb2d62f1fe3711
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : 8de9
+%% GIT git_short_commit : e7621
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-login-10-ng
-%% generated_on_date : 2019-03-21 10:01:34.077807
+%% hostname : eu-c7-064-09
+%% generated_on_date : 2019-04-01 17:32:21.014700
 %% accessed_environment:
 %%    STATISTICAL_BV=/cluster/project/sam/klye/systemspaperdata/
 %% python_version: 
@@ -1220,8 +1220,8 @@ Hostname: eu-login-10-ng};
 %%     PIL.PngImagePlugin: 0.9 (/cluster/home/klye/.local/lib/python3.6/site-packages/PIL/PngImagePlugin.py)
 %%     zmq.utils.garbage: Unknown (/cluster/home/klye/.local/lib/python3.6/site-packages/zmq/utils/garbage.py)
 %% stacktrace:
-%%     [function: savePlot, line: 247, file: ../python/plot_info.py]
-%%     [function: showAndSave, line: 290, file: ../python/plot_info.py]
+%%     [function: savePlot, line: 262, file: ../python/plot_info.py]
+%%     [function: showAndSave, line: 305, file: ../python/plot_info.py]
 %%     [function: plotResolutionDirection, line: 240, file: <ipython-input-2-2a654e3aab5f>]
 %%     [function: <module>, line: 243, file: <ipython-input-2-2a654e3aab5f>]
 %%     [function: run_code, line: 3291, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
