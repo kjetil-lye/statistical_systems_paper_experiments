@@ -5,13 +5,11 @@
 \definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
 \definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
 \definecolor{color3}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
-\definecolor{color4}{rgb}{0.580392156862745,0.403921568627451,0.741176470588235}
-\definecolor{color5}{rgb}{0.549019607843137,0.337254901960784,0.294117647058824}
 
 \begin{axis}[
 height=\figureheight,
 legend cell align={left},
-legend entries={{ENO2 $\epsilon=0.0500$},{$\mathcal{O}(h^{0.73})$},{WENO2 $\epsilon=0.0500$},{$\mathcal{O}(h^{0.68})$},{MC $\epsilon=0.0500$},{$\mathcal{O}(h^{0.75})$}},
+legend entries={{WENO2 $\epsilon=0.0500$},{$\mathcal{O}(h^{0.73})$},{MC $\epsilon=0.0500$},{$\mathcal{O}(h^{0.68})$}},
 legend style={at={(1,0.5)}, anchor=east, draw=white!80.0!black},
 tick align=outside,
 tick pos=left,
@@ -25,15 +23,13 @@ xmode=log,
 y grid style={white!69.01960784313725!black},
 ylabel={$\left(\bar{S}^{1}_{1/N,N}(h)\right)^{\frac{1}{1}}$},
 ymajorgrids,
-ymin=0.038203170465005, ymax=0.74935860386888,
+ymin=0.0437008174836084, ymax=0.744576310452804,
 ymode=log
 ]
 \addlegendimage{no markers, color0}
 \addlegendimage{no markers, color1}
 \addlegendimage{no markers, color2}
 \addlegendimage{no markers, color3}
-\addlegendimage{no markers, color4}
-\addlegendimage{no markers, color5}
 \addplot [semithick, color0]
 table [row sep=\\]{%
 0.00100806451612903	0.0523992549821537 \\
@@ -170,74 +166,6 @@ table [row sep=\\]{%
 0.030241935483871	0.640128336191596 \\
 0.03125	0.654539098402374 \\
 };
-\addplot [semithick, color4]
-table [row sep=\\]{%
-0.00100806451612903	0.0471298220384234 \\
-0.00201612903225806	0.0727684549103574 \\
-0.0030241935483871	0.0966360148751694 \\
-0.00403225806451613	0.119745661217678 \\
-0.00504032258064516	0.142246165759449 \\
-0.00604838709677419	0.164162681257412 \\
-0.00705645161290323	0.185502451612623 \\
-0.00806451612903226	0.2062753443356 \\
-0.00907258064516129	0.226496629444055 \\
-0.0100806451612903	0.246185778522699 \\
-0.0110887096774194	0.265364769433523 \\
-0.0120967741935484	0.284056684516023 \\
-0.0131048387096774	0.30228475665394 \\
-0.0141129032258065	0.320071827921086 \\
-0.0151209677419355	0.337440013872892 \\
-0.0161290322580645	0.354410493300306 \\
-0.0171370967741935	0.371003413554559 \\
-0.0181451612903226	0.387237849802311 \\
-0.0191532258064516	0.403131805999522 \\
-0.0201612903225806	0.418702237161997 \\
-0.0211693548387097	0.433965078932681 \\
-0.0221774193548387	0.448935294857366 \\
-0.0231854838709677	0.463626926050996 \\
-0.0241935483870968	0.47805313864797 \\
-0.0252016129032258	0.49222628787083 \\
-0.0262096774193548	0.506157985200499 \\
-0.0272177419354839	0.519859148625024 \\
-0.0282258064516129	0.533340041244163 \\
-0.0292338709677419	0.546610310327055 \\
-0.030241935483871	0.559679029638233 \\
-0.03125	0.572554741147301 \\
-};
-\addplot [semithick, color5, dashed]
-table [row sep=\\]{%
-0.00100806451612903	0.0437374551847201 \\
-0.00201612903225806	0.0736125779432823 \\
-0.0030241935483871	0.0998185325410787 \\
-0.00403225806451613	0.123894076794594 \\
-0.00504032258064516	0.146500129497661 \\
-0.00604838709677419	0.168000160865126 \\
-0.00705645161290323	0.188621977719427 \\
-0.00806451612903226	0.208520645433875 \\
-0.00907258064516129	0.227807937077585 \\
-0.0100806451612903	0.246567893714929 \\
-0.0110887096774194	0.264865789674373 \\
-0.0120967741935484	0.282753646364147 \\
-0.0131048387096774	0.300273801224476 \\
-0.0141129032258065	0.317461314976966 \\
-0.0151209677419355	0.334345651382189 \\
-0.0161290322580645	0.350951883230444 \\
-0.0171370967741935	0.367301579449448 \\
-0.0181451612903226	0.383413471437647 \\
-0.0191532258064516	0.39930396277142 \\
-0.0201612903225806	0.414987525400017 \\
-0.0211693548387097	0.430477012012507 \\
-0.0221774193548387	0.445783905455143 \\
-0.0231854838709677	0.460918520165532 \\
-0.0241935483870968	0.475890166536245 \\
-0.0252016129032258	0.490707286287873 \\
-0.0262096774193548	0.505377564917964 \\
-0.0272177419354839	0.519908025838664 \\
-0.0282258064516129	0.5343051097514 \\
-0.0292338709677419	0.548574742017376 \\
-0.030241935483871	0.562722390189889 \\
-0.03125	0.576753113424579 \\
-};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -248,15 +176,15 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: f60eceb2dce46b266ab0cfcc3d8c2efc6fec1660
+Commit: e7621fc3916f35dc11e10228ddcb2d62f1fe3711
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-login-08-ng};
+Hostname: eu-c7-064-14};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @f60ec};
+]{ @e7621};
 \end{axis}
 
 \end{tikzpicture}
@@ -268,14 +196,14 @@ Hostname: eu-login-08-ng};
 %% script name: StructureAlsvinn.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : f60eceb2dce46b266ab0cfcc3d8c2efc6fec1660
+%% GIT git_commit : e7621fc3916f35dc11e10228ddcb2d62f1fe3711
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : f60ec
+%% GIT git_short_commit : e7621
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-login-08-ng
-%% generated_on_date : 2019-03-26 05:50:00.060077
+%% hostname : eu-c7-064-14
+%% generated_on_date : 2019-04-01 19:00:38.023563
 %% accessed_environment:
 %%    STATISTICAL_STRUCTURE=/cluster/project/sam/klye/systemspaperdata/
 %% python_version: 
@@ -1339,8 +1267,8 @@ Hostname: eu-login-08-ng};
 %% stacktrace:
 %%     [function: savePlot, line: 262, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 305, file: ../python/plot_info.py]
-%%     [function: compare_weno_eno_mc, line: 52, file: <ipython-input-8-d79073fbc313>]
-%%     [function: <module>, line: 53, file: <ipython-input-8-d79073fbc313>]
+%%     [function: compare_weno_mc, line: 52, file: <ipython-input-8-9f21df258a61>]
+%%     [function: <module>, line: 53, file: <ipython-input-8-9f21df258a61>]
 %%     [function: run_code, line: 3291, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3215, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3044, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]

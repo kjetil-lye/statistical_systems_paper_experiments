@@ -195,15 +195,15 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: f60eceb2dce46b266ab0cfcc3d8c2efc6fec1660
+Commit: e7621fc3916f35dc11e10228ddcb2d62f1fe3711
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-login-08-ng};
+Hostname: eu-c7-064-14};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @f60ec};
+]{ @e7621};
 \end{axis}
 
 \end{tikzpicture}
@@ -215,14 +215,14 @@ Hostname: eu-login-08-ng};
 %% script name: StructureAlsvinn.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : f60eceb2dce46b266ab0cfcc3d8c2efc6fec1660
+%% GIT git_commit : e7621fc3916f35dc11e10228ddcb2d62f1fe3711
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : f60ec
+%% GIT git_short_commit : e7621
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-login-08-ng
-%% generated_on_date : 2019-03-26 05:41:31.965200
+%% hostname : eu-c7-064-14
+%% generated_on_date : 2019-04-01 18:48:13.319333
 %% accessed_environment:
 %%    STATISTICAL_STRUCTURE=/cluster/project/sam/klye/systemspaperdata/
 %% python_version: 

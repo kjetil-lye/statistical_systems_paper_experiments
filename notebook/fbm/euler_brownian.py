@@ -60,11 +60,6 @@ def fBm(N, H, rand):
                 d[iCenter, jCenter] = 1.0/4.0*(d[iLeft,jLeft]+d[iLeft,jRight] \
                                               +d[iRight,jLeft]+d[iRight,jRight]) \
                                               +variancefBm(H,n)*rand()
-        for i in range(0,N):
-            d[i, 0] = 0
-            d[0, i] = 0
-            d[i, -1] = 0
-            d[-1, i] = 0
         return d
 
 

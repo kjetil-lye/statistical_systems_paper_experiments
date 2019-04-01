@@ -5,13 +5,11 @@
 \definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
 \definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
 \definecolor{color3}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
-\definecolor{color4}{rgb}{0.580392156862745,0.403921568627451,0.741176470588235}
-\definecolor{color5}{rgb}{0.549019607843137,0.337254901960784,0.294117647058824}
 
 \begin{axis}[
 height=\figureheight,
 legend cell align={left},
-legend entries={{ENO2 $\epsilon=0.0500$},{$\mathcal{O}(h^{0.28})$},{WENO2 $\epsilon=0.0500$},{$\mathcal{O}(h^{0.28})$},{MC $\epsilon=0.0500$},{$\mathcal{O}(h^{0.28})$}},
+legend entries={{WENO2 $\epsilon=0.0500$},{$\mathcal{O}(h^{0.28})$},{MC $\epsilon=0.0500$},{$\mathcal{O}(h^{0.28})$}},
 legend style={at={(1,0.5)}, anchor=east, draw=white!80.0!black},
 minor ytick={0.02,0.03,0.04,0.05,0.06,0.07,0.08,0.09,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,2,3,4,5,6,7,8,9,20,30,40,50,60,70,80,90},
 minor yticklabels={$\mathdefault{2\times10^{-2}}$,$\mathdefault{3\times10^{-2}}$,$\mathdefault{4\times10^{-2}}$,,$\mathdefault{6\times10^{-2}}$,,,,$\mathdefault{2\times10^{-1}}$,$\mathdefault{3\times10^{-1}}$,$\mathdefault{4\times10^{-1}}$,,$\mathdefault{6\times10^{-1}}$,,,,$\mathdefault{2\times10^{0}}$,$\mathdefault{3\times10^{0}}$,$\mathdefault{4\times10^{0}}$,,$\mathdefault{6\times10^{0}}$,,,,$\mathdefault{2\times10^{1}}$,$\mathdefault{3\times10^{1}}$,$\mathdefault{4\times10^{1}}$,,$\mathdefault{6\times10^{1}}$,,,},
@@ -37,8 +35,6 @@ yticklabels={$\mathdefault{10^{-2}}$,$\mathdefault{10^{-1}}$,$\mathdefault{10^{0
 \addlegendimage{no markers, color1}
 \addlegendimage{no markers, color2}
 \addlegendimage{no markers, color3}
-\addlegendimage{no markers, color4}
-\addlegendimage{no markers, color5}
 \addplot [semithick, color0]
 table [row sep=\\]{%
 0.00100806451612903	0.228976350965716 \\
@@ -175,74 +171,6 @@ table [row sep=\\]{%
 0.030241935483871	0.551307095295285 \\
 0.03125	0.556374126983832 \\
 };
-\addplot [semithick, color4]
-table [row sep=\\]{%
-0.00100806451612903	0.228976350965716 \\
-0.00201612903225806	0.261980622575506 \\
-0.0030241935483871	0.287223624905812 \\
-0.00403225806451613	0.308565040579996 \\
-0.00504032258064516	0.327299823189396 \\
-0.00604838709677419	0.344113443387308 \\
-0.00705645161290323	0.359434047075966 \\
-0.00806451612903226	0.373552832124337 \\
-0.00907258064516129	0.386678872982333 \\
-0.0100806451612903	0.39896820902222 \\
-0.0110887096774194	0.410540816125759 \\
-0.0120967741935484	0.421491200116424 \\
-0.0131048387096774	0.431895290887528 \\
-0.0141129032258065	0.441815115558092 \\
-0.0151209677419355	0.451302086427742 \\
-0.0161290322580645	0.460399337575125 \\
-0.0171370967741935	0.469143452874103 \\
-0.0181451612903226	0.477565766603705 \\
-0.0191532258064516	0.485693346709796 \\
-0.0201612903225806	0.493549747850852 \\
-0.0211693548387097	0.50115561360894 \\
-0.0221774193548387	0.508529158270613 \\
-0.0231854838709677	0.51568653238825 \\
-0.0241935483870968	0.522642138462479 \\
-0.0252016129032258	0.529408884624042 \\
-0.0262096774193548	0.53599838604036 \\
-0.0272177419354839	0.542421139888603 \\
-0.0282258064516129	0.548686670615853 \\
-0.0292338709677419	0.554803650491027 \\
-0.030241935483871	0.560780001461441 \\
-0.03125	0.566622983813379 \\
-};
-\addplot [semithick, color5, dashed]
-table [row sep=\\]{%
-0.00100806451612903	0.213427133634007 \\
-0.00201612903225806	0.258965868084994 \\
-0.0030241935483871	0.289984791669185 \\
-0.00403225806451613	0.314221156846989 \\
-0.00504032258064516	0.334406796981218 \\
-0.00604838709677419	0.351858557191862 \\
-0.00705645161290323	0.367322474212289 \\
-0.00806451612903226	0.381266211413832 \\
-0.00907258064516129	0.394004164173534 \\
-0.0100806451612903	0.405758841433293 \\
-0.0110887096774194	0.416694061293023 \\
-0.0120967741935484	0.426934266298956 \\
-0.0131048387096774	0.436576423886557 \\
-0.0141129032258065	0.445697703857259 \\
-0.0151209677419355	0.454360622776532 \\
-0.0161290322580645	0.462616602346234 \\
-0.0171370967741935	0.470508498196622 \\
-0.0181451612903226	0.47807243937068 \\
-0.0191532258064516	0.485339193833391 \\
-0.0201612903225806	0.49233520038331 \\
-0.0211693548387097	0.499083360893188 \\
-0.0221774193548387	0.505603657188485 \\
-0.0231854838709677	0.511913637505055 \\
-0.0241935483870968	0.518028804514304 \\
-0.0252016129032258	0.523962928064263 \\
-0.0262096774193548	0.529728299641139 \\
-0.0272177419354839	0.535335941214403 \\
-0.0282258064516129	0.540795778013919 \\
-0.0292338709677419	0.546116782522123 \\
-0.030241935483871	0.551307095295285 \\
-0.03125	0.556374126983832 \\
-};
 \path [draw=black, fill opacity=0] (axis cs:0,0.203257885842296)
 --(axis cs:0,0.594971844685365);
 
@@ -265,15 +193,15 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: f60eceb2dce46b266ab0cfcc3d8c2efc6fec1660
+Commit: e7621fc3916f35dc11e10228ddcb2d62f1fe3711
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-login-08-ng};
+Hostname: eu-c7-064-14};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{ @f60ec};
+]{ @e7621};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -284,9 +212,9 @@ Hostname: eu-login-08-ng};
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: f60eceb2dce46b266ab0cfcc3d8c2efc6fec1660
+Commit: e7621fc3916f35dc11e10228ddcb2d62f1fe3711
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-login-08-ng};
+Hostname: eu-c7-064-14};
 \end{axis}
 
 \end{tikzpicture}
@@ -298,14 +226,14 @@ Hostname: eu-login-08-ng};
 %% script name: StructureAlsvinn.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : f60eceb2dce46b266ab0cfcc3d8c2efc6fec1660
+%% GIT git_commit : e7621fc3916f35dc11e10228ddcb2d62f1fe3711
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : f60ec
+%% GIT git_short_commit : e7621
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-login-08-ng
-%% generated_on_date : 2019-03-26 05:50:18.123925
+%% hostname : eu-c7-064-14
+%% generated_on_date : 2019-04-01 19:01:03.910830
 %% accessed_environment:
 %%    STATISTICAL_STRUCTURE=/cluster/project/sam/klye/systemspaperdata/
 %% python_version: 
@@ -1370,8 +1298,8 @@ Hostname: eu-login-08-ng};
 %%     [function: savePlot, line: 262, file: ../python/plot_info.py]
 %%     [function: savePlot, line: 295, file: ../python/plot_info.py]
 %%     [function: showAndSave, line: 305, file: ../python/plot_info.py]
-%%     [function: compare_weno_eno_mc, line: 52, file: <ipython-input-8-d79073fbc313>]
-%%     [function: <module>, line: 53, file: <ipython-input-8-d79073fbc313>]
+%%     [function: compare_weno_mc, line: 52, file: <ipython-input-8-9f21df258a61>]
+%%     [function: <module>, line: 53, file: <ipython-input-8-9f21df258a61>]
 %%     [function: run_code, line: 3291, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3215, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3044, file: /cluster/home/klye/.local/lib/python3.6/site-packages/IPython/core/interactiveshell.py]
