@@ -9,5 +9,5 @@ do
 	exit 1
     fi
 
-    bsub -W 24:00 -R 'rusage[mem=8000]' jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute ${notebook}.ipynb --output ${notebook}Output.ipynb
+    bsub -W 24:00 -R 'rusage[mem=32000]' jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute ${notebook}.ipynb --output ${notebook}Output.ipynb
 done
