@@ -1,11 +1,11 @@
-N = len(a)/4
+N = len(a)//4
 a1 = a[:10]
 a2 = a[10:20]
 b1 = a[20:40]
 b2 = a[30:40]
 
 
-perturbation = 0.05
+perturbation = 0.01
 normalization1 = sum(a1)
 if abs(normalization1) < 1e-10:
 	normalization1 = 1
