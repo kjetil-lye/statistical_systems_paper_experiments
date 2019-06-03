@@ -24,7 +24,7 @@ ytick style={color=black},
 ytick={0,0.2,0.4,0.6,0.8,1},
 yticklabels={0.0,0.2,0.4,0.6,0.8,1.0}
 ]
-\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {eulermean_kelvinhelmholtz_1024_00050_0_notitle-002.png};
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=0, xmax=1, ymin=0, ymax=1] {eulermean_kelvinhelmholtz_1024_00050_0_notitle-003.png};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -35,15 +35,15 @@ yticklabels={0.0,0.2,0.4,0.6,0.8,1.0}
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: 6127e443a7f0e9546a354d24749758b6cf693100
+Commit: 0a22761655c4e595ef17a67ed3ff403ab4c93909
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-110-16};
+Hostname: eu-a6-001-14};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@6127e};
+]{@0a22};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -54,9 +54,9 @@ Hostname: eu-c7-110-16};
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: 6127e443a7f0e9546a354d24749758b6cf693100
+Commit: 0a22761655c4e595ef17a67ed3ff403ab4c93909
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-Hostname: eu-c7-110-16};
+Hostname: eu-a6-001-14};
 \end{axis}
 
 \end{tikzpicture}
@@ -68,14 +68,14 @@ Hostname: eu-c7-110-16};
 %% script name: StructureAlsvinn.ipynb
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 6127e443a7f0e9546a354d24749758b6cf693100
+%% GIT git_commit : 0a22761655c4e595ef17a67ed3ff403ab4c93909
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : 6127e
+%% GIT git_short_commit : 0a22
 %% working_directory : /cluster/scratch/klye/statistical_systems_paper_experiments/notebook
-%% hostname : eu-c7-110-16
-%% generated_on_date : 2019-05-27 16:45:51.028599
+%% hostname : eu-a6-001-14
+%% generated_on_date : 2019-05-29 08:38:03.590222
 %% accessed_environment:
 %%    STATISTICAL_STRUCTURE=/cluster/project/sam/klye/systemspaperdata
 %% python_version: 
