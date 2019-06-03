@@ -15,16 +15,16 @@ xmode=log,
 xtick={128,256,512,1024},
 xticklabels={$128 \times 128$,$256 \times 256$,$512 \times 512$,$1024 \times 1024$},
 y grid style={white!69.01960784313725!black},
-ylabel={$||u^{\Delta x}-u^{2\Delta x}||_{L^1}$},
+ylabel={$||\rho^{\Delta x}-\rho^{2\Delta x}||_{L^1}$},
 ymin=0.01, ymax=1,
 ymode=log
 ]
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}, forget plot]
 table [row sep=\\]{%
-128	0.165823510362364 \\
-256	0.152437988643663 \\
-512	0.103336316965053 \\
-1024	0.0977593543523998 \\
+128	0.188840948645923 \\
+256	0.194662049958763 \\
+512	0.212948750754051 \\
+1024	0.182346225136594 \\
 };
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
@@ -36,15 +36,15 @@ table [row sep=\\]{%
 and Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
 and Siddhartha Mishra@ETHZ <smishra@sam.math.ethz.ch>
 and Franziska Weber@CMU <franzisw@andrew.cmu.edu>
-Commit: 7fc7e04ee5628aa2dc9f98b27275c8f0f6f8ad3c
+Commit: 54c809e21c82be46e9b428773987b8439ac321c0
 Repo: git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
 Hostname: galerkin};
 \node at (axis cs:0.2,0.93)[
   scale=0.5,
   anchor=south east,
-  text=black,
+  text=white!50.19607843137255!black,
   rotate=0.0
-]{ @7fc7};
+]{ @54c8};
 \end{axis}
 
 \end{tikzpicture}
@@ -55,16 +55,17 @@ Hostname: galerkin};
 %% script name: /usr/lib/python3.7/site-packages/ipykernel_launcher.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : 7fc7e04ee5628aa2dc9f98b27275c8f0f6f8ad3c
+%% GIT git_commit : 54c809e21c82be46e9b428773987b8439ac321c0
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/statistical_systems_paper_experiments.git
-%% GIT git_short_commit : 7fc7
+%% GIT git_short_commit : 54c8
 %% working_directory : /home/kjetil/projects/statistical_systems_paper_experiments/notebook
 %% hostname : galerkin
-%% generated_on_date : 2019-03-20 10:52:56.004593
+%% generated_on_date : 2019-06-03 10:18:57.899470
+%% accessed_environment:
 %% python_version: 
-%%    /usr/bin/python3 (Version: 3.7.2 (default, Jan 10 2019, 23:51:51) 
+%%    /usr/bin/python3 (Version: 3.7.3 (default, Mar 26 2019, 21:43:19) 
 %%    [GCC 8.2.1 20181127])
 %% python modules:
 %%     sys: Unknown (Unknown)
@@ -85,7 +86,7 @@ Hostname: galerkin};
 %%     encodings.aliases: Unknown (/usr/lib/python3.7/encodings/aliases.py)
 %%     encodings.utf_8: Unknown (/usr/lib/python3.7/encodings/utf_8.py)
 %%     _signal: Unknown (Unknown)
-%%     __main__: 1.16.2 (Unknown)
+%%     __main__: 1.16.4 (Unknown)
 %%     encodings.latin_1: Unknown (/usr/lib/python3.7/encodings/latin_1.py)
 %%     io: Unknown (/usr/lib/python3.7/io.py)
 %%     abc: Unknown (/usr/lib/python3.7/abc.py)
@@ -129,8 +130,8 @@ Hostname: galerkin};
 %%     pkgutil: Unknown (/usr/lib/python3.7/pkgutil.py)
 %%     weakref: Unknown (/usr/lib/python3.7/weakref.py)
 %%     _weakrefset: Unknown (/usr/lib/python3.7/_weakrefset.py)
-%%     ipykernel: 4.9.0 (/usr/lib/python3.7/site-packages/ipykernel/__init__.py)
-%%     ipykernel._version: 4.9.0 (/usr/lib/python3.7/site-packages/ipykernel/_version.py)
+%%     ipykernel: 5.1.0 (/usr/lib/python3.7/site-packages/ipykernel/__init__.py)
+%%     ipykernel._version: 5.1.0 (/usr/lib/python3.7/site-packages/ipykernel/_version.py)
 %%     ipykernel.connect: Unknown (/usr/lib/python3.7/site-packages/ipykernel/connect.py)
 %%     __future__: Unknown (/usr/lib/python3.7/__future__.py)
 %%     json: 2.0.9 (/usr/lib/python3.7/json/__init__.py)
@@ -159,10 +160,10 @@ Hostname: galerkin};
 %%     linecache: Unknown (/usr/lib/python3.7/linecache.py)
 %%     tokenize: Unknown (/usr/lib/python3.7/tokenize.py)
 %%     token: Unknown (/usr/lib/python3.7/token.py)
-%%     IPython: 7.3.0 (/usr/lib/python3.7/site-packages/IPython/__init__.py)
+%%     IPython: 7.5.0 (/usr/lib/python3.7/site-packages/IPython/__init__.py)
 %%     IPython.core: Unknown (/usr/lib/python3.7/site-packages/IPython/core/__init__.py)
 %%     IPython.core.getipython: Unknown (/usr/lib/python3.7/site-packages/IPython/core/getipython.py)
-%%     IPython.core.release: 7.3.0 (/usr/lib/python3.7/site-packages/IPython/core/release.py)
+%%     IPython.core.release: 7.5.0 (/usr/lib/python3.7/site-packages/IPython/core/release.py)
 %%     IPython.core.application: Unknown (/usr/lib/python3.7/site-packages/IPython/core/application.py)
 %%     atexit: Unknown (Unknown)
 %%     copy: Unknown (/usr/lib/python3.7/copy.py)
@@ -202,7 +203,7 @@ Hostname: galerkin};
 %%     traitlets._version: 4.3.2 (/usr/lib/python3.7/site-packages/traitlets/_version.py)
 %%     traitlets.config: Unknown (/usr/lib/python3.7/site-packages/traitlets/config/__init__.py)
 %%     traitlets.config.application: Unknown (/usr/lib/python3.7/site-packages/traitlets/config/application.py)
-%%     decorator: 4.3.2 (/usr/lib/python3.7/site-packages/decorator.py)
+%%     decorator: 4.4.0 (/usr/lib/python3.7/site-packages/decorator.py)
 %%     traitlets.config.configurable: Unknown (/usr/lib/python3.7/site-packages/traitlets/config/configurable.py)
 %%     traitlets.config.loader: Unknown (/usr/lib/python3.7/site-packages/traitlets/config/loader.py)
 %%     argparse: 1.1 (/usr/lib/python3.7/argparse.py)
@@ -235,7 +236,7 @@ Hostname: galerkin};
 %%     IPython.utils.coloransi: Unknown (/usr/lib/python3.7/site-packages/IPython/utils/coloransi.py)
 %%     IPython.utils.ipstruct: Unknown (/usr/lib/python3.7/site-packages/IPython/utils/ipstruct.py)
 %%     IPython.utils.colorable: Unknown (/usr/lib/python3.7/site-packages/IPython/utils/colorable.py)
-%%     pygments: 2.3.1 (/usr/lib/python3.7/site-packages/pygments/__init__.py)
+%%     pygments: 2.4.2 (/usr/lib/python3.7/site-packages/pygments/__init__.py)
 %%     pygments.util: Unknown (/usr/lib/python3.7/site-packages/pygments/util.py)
 %%     IPython.utils.py3compat: Unknown (/usr/lib/python3.7/site-packages/IPython/utils/py3compat.py)
 %%     IPython.utils.encoding: Unknown (/usr/lib/python3.7/site-packages/IPython/utils/encoding.py)
@@ -250,7 +251,7 @@ Hostname: galerkin};
 %%     IPython.utils.path: Unknown (/usr/lib/python3.7/site-packages/IPython/utils/path.py)
 %%     IPython.utils.process: Unknown (/usr/lib/python3.7/site-packages/IPython/utils/process.py)
 %%     IPython.utils._process_posix: Unknown (/usr/lib/python3.7/site-packages/IPython/utils/_process_posix.py)
-%%     pexpect: 4.6.0 (/usr/lib/python3.7/site-packages/pexpect/__init__.py)
+%%     pexpect: 4.7.0 (/usr/lib/python3.7/site-packages/pexpect/__init__.py)
 %%     pexpect.exceptions: Unknown (/usr/lib/python3.7/site-packages/pexpect/exceptions.py)
 %%     pexpect.utils: Unknown (/usr/lib/python3.7/site-packages/pexpect/utils.py)
 %%     pexpect.expect: Unknown (/usr/lib/python3.7/site-packages/pexpect/expect.py)
@@ -392,7 +393,7 @@ Hostname: galerkin};
 %%     IPython.utils.contexts: Unknown (/usr/lib/python3.7/site-packages/IPython/utils/contexts.py)
 %%     IPython.core.async_helpers: Unknown (/usr/lib/python3.7/site-packages/IPython/core/async_helpers.py)
 %%     IPython.terminal.interactiveshell: Unknown (/usr/lib/python3.7/site-packages/IPython/terminal/interactiveshell.py)
-%%     prompt_toolkit: 2.0.8 (/usr/lib/python3.7/site-packages/prompt_toolkit/__init__.py)
+%%     prompt_toolkit: 2.0.9 (/usr/lib/python3.7/site-packages/prompt_toolkit/__init__.py)
 %%     prompt_toolkit.application: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/application/__init__.py)
 %%     prompt_toolkit.application.application: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/application/application.py)
 %%     prompt_toolkit.buffer: Unknown (/usr/lib/python3.7/site-packages/prompt_toolkit/buffer.py)
@@ -530,7 +531,7 @@ Hostname: galerkin};
 %%     IPython.utils.generics: Unknown (/usr/lib/python3.7/site-packages/IPython/utils/generics.py)
 %%     jedi: 0.13.3 (/usr/lib/python3.7/site-packages/jedi/__init__.py)
 %%     jedi.api: Unknown (/usr/lib/python3.7/site-packages/jedi/api/__init__.py)
-%%     parso: 0.3.3 (/usr/lib/python3.7/site-packages/parso/__init__.py)
+%%     parso: 0.4.0 (/usr/lib/python3.7/site-packages/parso/__init__.py)
 %%     parso.parser: Unknown (/usr/lib/python3.7/site-packages/parso/parser.py)
 %%     parso.tree: Unknown (/usr/lib/python3.7/site-packages/parso/tree.py)
 %%     parso._compatibility: Unknown (/usr/lib/python3.7/site-packages/parso/_compatibility.py)
@@ -552,6 +553,7 @@ Hostname: galerkin};
 %%     parso.python.errors: Unknown (/usr/lib/python3.7/site-packages/parso/python/errors.py)
 %%     parso.normalizer: Unknown (/usr/lib/python3.7/site-packages/parso/normalizer.py)
 %%     parso.python.pep8: Unknown (/usr/lib/python3.7/site-packages/parso/python/pep8.py)
+%%     parso.file_io: Unknown (/usr/lib/python3.7/site-packages/parso/file_io.py)
 %%     jedi._compatibility: Unknown (/usr/lib/python3.7/site-packages/jedi/_compatibility.py)
 %%     jedi.parser_utils: Unknown (/usr/lib/python3.7/site-packages/jedi/parser_utils.py)
 %%     jedi.debug: Unknown (/usr/lib/python3.7/site-packages/jedi/debug.py)
@@ -754,6 +756,7 @@ Hostname: galerkin};
 %%     tornado.platform.posix: Unknown (/usr/lib/python3.7/site-packages/tornado/platform/posix.py)
 %%     tornado.platform.common: Unknown (/usr/lib/python3.7/site-packages/tornado/platform/common.py)
 %%     tornado.platform.interface: Unknown (/usr/lib/python3.7/site-packages/tornado/platform/interface.py)
+%%     monotonic: Unknown (/usr/lib/python3.7/site-packages/monotonic.py)
 %%     concurrent.futures.thread: Unknown (/usr/lib/python3.7/concurrent/futures/thread.py)
 %%     zmq.eventloop: Unknown (/usr/lib/python3.7/site-packages/zmq/eventloop/__init__.py)
 %%     zmq.eventloop.ioloop: Unknown (/usr/lib/python3.7/site-packages/zmq/eventloop/ioloop.py)
@@ -785,6 +788,8 @@ Hostname: galerkin};
 %%     ipykernel.comm.manager: Unknown (/usr/lib/python3.7/site-packages/ipykernel/comm/manager.py)
 %%     ipykernel.comm.comm: Unknown (/usr/lib/python3.7/site-packages/ipykernel/comm/comm.py)
 %%     ipykernel.kernelbase: Unknown (/usr/lib/python3.7/site-packages/ipykernel/kernelbase.py)
+%%     tornado.queues: Unknown (/usr/lib/python3.7/site-packages/tornado/queues.py)
+%%     tornado.locks: Unknown (/usr/lib/python3.7/site-packages/tornado/locks.py)
 %%     ipykernel.jsonutil: Unknown (/usr/lib/python3.7/site-packages/ipykernel/jsonutil.py)
 %%     ipykernel.zmqshell: Unknown (/usr/lib/python3.7/site-packages/ipykernel/zmqshell.py)
 %%     IPython.core.payloadpage: Unknown (/usr/lib/python3.7/site-packages/IPython/core/payloadpage.py)
@@ -824,17 +829,17 @@ Hostname: galerkin};
 %%     ipywidgets.widgets.interaction: Unknown (/usr/lib/python3.7/site-packages/ipywidgets/widgets/interaction.py)
 %%     ipywidgets.widgets.widget_link: Unknown (/usr/lib/python3.7/site-packages/ipywidgets/widgets/widget_link.py)
 %%     ipywidgets.widgets.widget_media: Unknown (/usr/lib/python3.7/site-packages/ipywidgets/widgets/widget_media.py)
-%%     matplotlib: 3.0.3 (/usr/lib/python3.7/site-packages/matplotlib/__init__.py)
-%%     distutils: 3.7.2 (/usr/lib/python3.7/distutils/__init__.py)
+%%     matplotlib: 3.1.0 (/usr/lib/python3.7/site-packages/matplotlib/__init__.py)
+%%     distutils: 3.7.3 (/usr/lib/python3.7/distutils/__init__.py)
 %%     distutils.version: Unknown (/usr/lib/python3.7/distutils/version.py)
 %%     matplotlib.cbook: Unknown (/usr/lib/python3.7/site-packages/matplotlib/cbook/__init__.py)
 %%     gzip: Unknown (/usr/lib/python3.7/gzip.py)
-%%     numpy: 1.16.2 (/usr/lib/python3.7/site-packages/numpy/__init__.py)
+%%     numpy: 1.16.4 (/usr/lib/python3.7/site-packages/numpy/__init__.py)
 %%     numpy._globals: Unknown (/usr/lib/python3.7/site-packages/numpy/_globals.py)
 %%     numpy.__config__: Unknown (/usr/lib/python3.7/site-packages/numpy/__config__.py)
 %%     numpy.version: Unknown (/usr/lib/python3.7/site-packages/numpy/version.py)
 %%     numpy._distributor_init: Unknown (/usr/lib/python3.7/site-packages/numpy/_distributor_init.py)
-%%     numpy.core: 1.16.2 (/usr/lib/python3.7/site-packages/numpy/core/__init__.py)
+%%     numpy.core: 1.16.4 (/usr/lib/python3.7/site-packages/numpy/core/__init__.py)
 %%     numpy.core.info: Unknown (/usr/lib/python3.7/site-packages/numpy/core/info.py)
 %%     numpy.core.multiarray: Unknown (/usr/lib/python3.7/site-packages/numpy/core/multiarray.py)
 %%     numpy.core.overrides: Unknown (/usr/lib/python3.7/site-packages/numpy/core/overrides.py)
@@ -864,7 +869,7 @@ Hostname: galerkin};
 %%     numpy.core._multiarray_tests: Unknown (/usr/lib/python3.7/site-packages/numpy/core/_multiarray_tests.cpython-37m-x86_64-linux-gnu.so)
 %%     numpy.core._dtype_ctypes: Unknown (/usr/lib/python3.7/site-packages/numpy/core/_dtype_ctypes.py)
 %%     numpy._pytesttester: Unknown (/usr/lib/python3.7/site-packages/numpy/_pytesttester.py)
-%%     numpy.lib: 1.16.2 (/usr/lib/python3.7/site-packages/numpy/lib/__init__.py)
+%%     numpy.lib: 1.16.4 (/usr/lib/python3.7/site-packages/numpy/lib/__init__.py)
 %%     numpy.lib.info: Unknown (/usr/lib/python3.7/site-packages/numpy/lib/info.py)
 %%     numpy.lib.type_check: Unknown (/usr/lib/python3.7/site-packages/numpy/lib/type_check.py)
 %%     numpy.lib.ufunclike: Unknown (/usr/lib/python3.7/site-packages/numpy/lib/ufunclike.py)
@@ -933,11 +938,12 @@ Hostname: galerkin};
 %%     matplotlib.cbook.deprecation: Unknown (/usr/lib/python3.7/site-packages/matplotlib/cbook/deprecation.py)
 %%     matplotlib.rcsetup: Unknown (/usr/lib/python3.7/site-packages/matplotlib/rcsetup.py)
 %%     matplotlib.fontconfig_pattern: Unknown (/usr/lib/python3.7/site-packages/matplotlib/fontconfig_pattern.py)
-%%     pyparsing: 2.3.1 (/usr/lib/python3.7/site-packages/pyparsing.py)
+%%     pyparsing: 2.4.0 (/usr/lib/python3.7/site-packages/pyparsing.py)
 %%     matplotlib.colors: Unknown (/usr/lib/python3.7/site-packages/matplotlib/colors.py)
 %%     matplotlib._color_data: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_color_data.py)
 %%     cycler: 0.10.0 (/usr/lib/python3.7/site-packages/cycler.py)
 %%     matplotlib._version: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_version.py)
+%%     kiwisolver: 1.1.0 (/usr/lib/python3.7/site-packages/kiwisolver.cpython-37m-x86_64-linux-gnu.so)
 %%     matplotlib.pyplot: Unknown (/usr/lib/python3.7/site-packages/matplotlib/pyplot.py)
 %%     matplotlib.colorbar: Unknown (/usr/lib/python3.7/site-packages/matplotlib/colorbar.py)
 %%     matplotlib.artist: Unknown (/usr/lib/python3.7/site-packages/matplotlib/artist.py)
@@ -952,7 +958,6 @@ Hostname: galerkin};
 %%     matplotlib.lines: Unknown (/usr/lib/python3.7/site-packages/matplotlib/lines.py)
 %%     matplotlib.markers: Unknown (/usr/lib/python3.7/site-packages/matplotlib/markers.py)
 %%     matplotlib.contour: Unknown (/usr/lib/python3.7/site-packages/matplotlib/contour.py)
-%%     matplotlib._contour: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_contour.cpython-37m-x86_64-linux-gnu.so)
 %%     matplotlib.ticker: Unknown (/usr/lib/python3.7/site-packages/matplotlib/ticker.py)
 %%     matplotlib.font_manager: Unknown (/usr/lib/python3.7/site-packages/matplotlib/font_manager.py)
 %%     matplotlib.afm: Unknown (/usr/lib/python3.7/site-packages/matplotlib/afm.py)
@@ -964,36 +969,26 @@ Hostname: galerkin};
 %%     matplotlib.textpath: Unknown (/usr/lib/python3.7/site-packages/matplotlib/textpath.py)
 %%     matplotlib.dviread: Unknown (/usr/lib/python3.7/site-packages/matplotlib/dviread.py)
 %%     matplotlib.mathtext: Unknown (/usr/lib/python3.7/site-packages/matplotlib/mathtext.py)
-%%     matplotlib._png: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_png.cpython-37m-x86_64-linux-gnu.so)
 %%     matplotlib.texmanager: Unknown (/usr/lib/python3.7/site-packages/matplotlib/texmanager.py)
 %%     matplotlib.blocking_input: Unknown (/usr/lib/python3.7/site-packages/matplotlib/blocking_input.py)
 %%     matplotlib.gridspec: Unknown (/usr/lib/python3.7/site-packages/matplotlib/gridspec.py)
 %%     matplotlib._pylab_helpers: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_pylab_helpers.py)
 %%     matplotlib.tight_layout: Unknown (/usr/lib/python3.7/site-packages/matplotlib/tight_layout.py)
 %%     matplotlib._layoutbox: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_layoutbox.py)
-%%     kiwisolver: 1.0.1 (/usr/lib/python3.7/site-packages/kiwisolver.cpython-37m-x86_64-linux-gnu.so)
 %%     matplotlib._constrained_layout: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_constrained_layout.py)
-%%     matplotlib.legend: Unknown (/usr/lib/python3.7/site-packages/matplotlib/legend.py)
-%%     matplotlib.offsetbox: Unknown (/usr/lib/python3.7/site-packages/matplotlib/offsetbox.py)
 %%     matplotlib.image: Unknown (/usr/lib/python3.7/site-packages/matplotlib/image.py)
 %%     matplotlib.backend_bases: Unknown (/usr/lib/python3.7/site-packages/matplotlib/backend_bases.py)
 %%     matplotlib.backend_tools: Unknown (/usr/lib/python3.7/site-packages/matplotlib/backend_tools.py)
 %%     matplotlib.tight_bbox: Unknown (/usr/lib/python3.7/site-packages/matplotlib/tight_bbox.py)
 %%     matplotlib.widgets: Unknown (/usr/lib/python3.7/site-packages/matplotlib/widgets.py)
-%%     PIL: 5.4.1 (/usr/lib/python3.7/site-packages/PIL/__init__.py)
-%%     PIL._version: 5.4.1 (/usr/lib/python3.7/site-packages/PIL/_version.py)
-%%     PIL.Image: 5.4.1 (/usr/lib/python3.7/site-packages/PIL/Image.py)
-%%     PIL._util: Unknown (/usr/lib/python3.7/site-packages/PIL/_util.py)
-%%     PIL.ImageMode: Unknown (/usr/lib/python3.7/site-packages/PIL/ImageMode.py)
-%%     PIL._binary: Unknown (/usr/lib/python3.7/site-packages/PIL/_binary.py)
-%%     PIL._imaging: Unknown (/usr/lib/python3.7/site-packages/PIL/_imaging.cpython-37m-x86_64-linux-gnu.so)
+%%     PIL: 6.0.0 (/usr/lib/python3.7/site-packages/PIL/__init__.py)
+%%     PIL._version: 6.0.0 (/usr/lib/python3.7/site-packages/PIL/_version.py)
 %%     matplotlib._image: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_image.cpython-37m-x86_64-linux-gnu.so)
-%%     matplotlib.container: Unknown (/usr/lib/python3.7/site-packages/matplotlib/container.py)
-%%     matplotlib.legend_handler: Unknown (/usr/lib/python3.7/site-packages/matplotlib/legend_handler.py)
 %%     matplotlib.style: Unknown (/usr/lib/python3.7/site-packages/matplotlib/style/__init__.py)
 %%     matplotlib.style.core: Unknown (/usr/lib/python3.7/site-packages/matplotlib/style/core.py)
 %%     matplotlib.figure: Unknown (/usr/lib/python3.7/site-packages/matplotlib/figure.py)
 %%     matplotlib.backends: Unknown (/usr/lib/python3.7/site-packages/matplotlib/backends/__init__.py)
+%%     matplotlib.projections: Unknown (/usr/lib/python3.7/site-packages/matplotlib/projections/__init__.py)
 %%     matplotlib.axes: Unknown (/usr/lib/python3.7/site-packages/matplotlib/axes/__init__.py)
 %%     matplotlib.axes._subplots: Unknown (/usr/lib/python3.7/site-packages/matplotlib/axes/_subplots.py)
 %%     matplotlib.axes._axes: Unknown (/usr/lib/python3.7/site-packages/matplotlib/axes/_axes.py)
@@ -1001,6 +996,10 @@ Hostname: galerkin};
 %%     matplotlib.units: Unknown (/usr/lib/python3.7/site-packages/matplotlib/units.py)
 %%     matplotlib.dates: Unknown (/usr/lib/python3.7/site-packages/matplotlib/dates.py)
 %%     dateutil.rrule: Unknown (/usr/lib/python3.7/site-packages/dateutil/rrule.py)
+%%     matplotlib.legend: Unknown (/usr/lib/python3.7/site-packages/matplotlib/legend.py)
+%%     matplotlib.offsetbox: Unknown (/usr/lib/python3.7/site-packages/matplotlib/offsetbox.py)
+%%     matplotlib.container: Unknown (/usr/lib/python3.7/site-packages/matplotlib/container.py)
+%%     matplotlib.legend_handler: Unknown (/usr/lib/python3.7/site-packages/matplotlib/legend_handler.py)
 %%     matplotlib.mlab: Unknown (/usr/lib/python3.7/site-packages/matplotlib/mlab.py)
 %%     csv: 1.0 (/usr/lib/python3.7/csv.py)
 %%     _csv: 1.0 (/usr/lib/python3.7/lib-dynload/_csv.cpython-37m-x86_64-linux-gnu.so)
@@ -1010,8 +1009,6 @@ Hostname: galerkin};
 %%     matplotlib.table: Unknown (/usr/lib/python3.7/site-packages/matplotlib/table.py)
 %%     matplotlib.tri: Unknown (/usr/lib/python3.7/site-packages/matplotlib/tri/__init__.py)
 %%     matplotlib.tri.triangulation: Unknown (/usr/lib/python3.7/site-packages/matplotlib/tri/triangulation.py)
-%%     matplotlib._tri: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_tri.cpython-37m-x86_64-linux-gnu.so)
-%%     qhull: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_qhull.cpython-37m-x86_64-linux-gnu.so)
 %%     matplotlib.tri.tricontour: Unknown (/usr/lib/python3.7/site-packages/matplotlib/tri/tricontour.py)
 %%     matplotlib.tri.tritools: Unknown (/usr/lib/python3.7/site-packages/matplotlib/tri/tritools.py)
 %%     matplotlib.tri.trifinder: Unknown (/usr/lib/python3.7/site-packages/matplotlib/tri/trifinder.py)
@@ -1023,22 +1020,28 @@ Hostname: galerkin};
 %%     matplotlib.axis: Unknown (/usr/lib/python3.7/site-packages/matplotlib/axis.py)
 %%     matplotlib.scale: Unknown (/usr/lib/python3.7/site-packages/matplotlib/scale.py)
 %%     matplotlib.spines: Unknown (/usr/lib/python3.7/site-packages/matplotlib/spines.py)
-%%     matplotlib.projections: Unknown (/usr/lib/python3.7/site-packages/matplotlib/projections/__init__.py)
+%%     matplotlib.axes._secondary_axes: Unknown (/usr/lib/python3.7/site-packages/matplotlib/axes/_secondary_axes.py)
 %%     matplotlib.projections.geo: Unknown (/usr/lib/python3.7/site-packages/matplotlib/projections/geo.py)
 %%     matplotlib.projections.polar: Unknown (/usr/lib/python3.7/site-packages/matplotlib/projections/polar.py)
 %%     ipykernel.pylab: Unknown (/usr/lib/python3.7/site-packages/ipykernel/pylab/__init__.py)
 %%     ipykernel.pylab.backend_inline: Unknown (/usr/lib/python3.7/site-packages/ipykernel/pylab/backend_inline.py)
-%%     matplotlib.backends.backend_agg: 3.0.3 (/usr/lib/python3.7/site-packages/matplotlib/backends/backend_agg.py)
+%%     matplotlib.backends.backend_agg: 3.1.0 (/usr/lib/python3.7/site-packages/matplotlib/backends/backend_agg.py)
 %%     matplotlib.backends._backend_agg: Unknown (/usr/lib/python3.7/site-packages/matplotlib/backends/_backend_agg.cpython-37m-x86_64-linux-gnu.so)
+%%     PIL.Image: 6.0.0 (/usr/lib/python3.7/site-packages/PIL/Image.py)
+%%     PIL._util: Unknown (/usr/lib/python3.7/site-packages/PIL/_util.py)
+%%     PIL.ImageMode: Unknown (/usr/lib/python3.7/site-packages/PIL/ImageMode.py)
+%%     PIL.TiffTags: Unknown (/usr/lib/python3.7/site-packages/PIL/TiffTags.py)
+%%     PIL._binary: Unknown (/usr/lib/python3.7/site-packages/PIL/_binary.py)
+%%     PIL._imaging: Unknown (/usr/lib/python3.7/site-packages/PIL/_imaging.cpython-37m-x86_64-linux-gnu.so)
 %%     ipykernel.pylab.config: Unknown (/usr/lib/python3.7/site-packages/ipykernel/pylab/config.py)
 %%     ipykernel.eventloops: Unknown (/usr/lib/python3.7/site-packages/ipykernel/eventloops.py)
 %%     alsvinn: Unknown (/home/kjetil/projects/alsvinn_pure/build/python/alsvinn/__init__.py)
 %%     alsvinn.alsvinn: Unknown (/home/kjetil/projects/alsvinn_pure/build/python/alsvinn/alsvinn.py)
 %%     alsvinn.config: Unknown (/home/kjetil/projects/alsvinn_pure/build/python/alsvinn/config.py)
 %%     dicttoxml: 1.7.4 (/usr/lib/python3.7/site-packages/dicttoxml.py)
-%%     netCDF4: 1.4.2 (/usr/lib/python3.7/site-packages/netCDF4/__init__.py)
-%%     netCDF4._netCDF4: 1.4.2 (/usr/lib/python3.7/site-packages/netCDF4/_netCDF4.cpython-37m-x86_64-linux-gnu.so)
-%%     _cython_0_29: Unknown (Unknown)
+%%     netCDF4: 1.5.1.2 (/usr/lib/python3.7/site-packages/netCDF4/__init__.py)
+%%     netCDF4._netCDF4: 1.5.1.2 (/usr/lib/python3.7/site-packages/netCDF4/_netCDF4.cpython-37m-x86_64-linux-gnu.so)
+%%     _cython_0_29_7: Unknown (Unknown)
 %%     netCDF4.utils: Unknown (/usr/lib/python3.7/site-packages/netCDF4/utils.py)
 %%     cftime: 1.0.3.4 (/usr/lib/python3.7/site-packages/cftime/__init__.py)
 %%     cftime._cftime: 1.0.3.4 (/usr/lib/python3.7/site-packages/cftime/_cftime.cpython-37m-x86_64-linux-gnu.so)
@@ -1056,7 +1059,7 @@ Hostname: galerkin};
 %%     matplotlib2tikz.quadmesh: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/quadmesh.py)
 %%     matplotlib2tikz.patch: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/patch.py)
 %%     matplotlib2tikz.text: Unknown (/home/kjetil/.local/lib/python3.7/site-packages/matplotlib2tikz/text.py)
-%%     plot_info: 1.16.2 (../python/plot_info.py)
+%%     plot_info: 1.16.4 (../python/plot_info.py)
 %%     git: 2.1.11 (/home/kjetil/.local/lib/python3.7/site-packages/git/__init__.py)
 %%     gitdb: 2.0.4 (/home/kjetil/.local/lib/python3.7/site-packages/gitdb/__init__.py)
 %%     smmap: 2.0.4 (/home/kjetil/.local/lib/python3.7/site-packages/smmap/__init__.py)
@@ -1139,39 +1142,43 @@ Hostname: galerkin};
 %%     PIL.ImageSequence: Unknown (/usr/lib/python3.7/site-packages/PIL/ImageSequence.py)
 %%     PIL.JpegImagePlugin: 0.6 (/usr/lib/python3.7/site-packages/PIL/JpegImagePlugin.py)
 %%     PIL.TiffImagePlugin: 1.3.5 (/usr/lib/python3.7/site-packages/PIL/TiffImagePlugin.py)
-%%     PIL.TiffTags: Unknown (/usr/lib/python3.7/site-packages/PIL/TiffTags.py)
 %%     fractions: Unknown (/usr/lib/python3.7/fractions.py)
 %%     PIL.JpegPresets: Unknown (/usr/lib/python3.7/site-packages/PIL/JpegPresets.py)
 %%     PIL.PpmImagePlugin: 0.2 (/usr/lib/python3.7/site-packages/PIL/PpmImagePlugin.py)
 %%     PIL.PngImagePlugin: 0.9 (/usr/lib/python3.7/site-packages/PIL/PngImagePlugin.py)
+%%     matplotlib._png: Unknown (/usr/lib/python3.7/site-packages/matplotlib/_png.cpython-37m-x86_64-linux-gnu.so)
 %%     zmq.utils.garbage: Unknown (/usr/lib/python3.7/site-packages/zmq/utils/garbage.py)
 %% stacktrace:
-%%     [function: savePlot, line: 240, file: ../python/plot_info.py]
-%%     [function: showAndSave, line: 280, file: ../python/plot_info.py]
-%%     [function: <module>, line: 7, file: <ipython-input-3-5db5a81e4a46>]
-%%     [function: run_code, line: 3291, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
-%%     [function: run_ast_nodes, line: 3209, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
-%%     [function: run_cell_async, line: 3044, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
+%%     [function: savePlot, line: 262, file: ../python/plot_info.py]
+%%     [function: showAndSave, line: 305, file: ../python/plot_info.py]
+%%     [function: <module>, line: 7, file: <ipython-input-3-cf1a1b94555b>]
+%%     [function: run_code, line: 3296, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
+%%     [function: run_ast_nodes, line: 3214, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
+%%     [function: run_cell_async, line: 3049, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: _pseudo_sync_runner, line: 67, file: /usr/lib/python3.7/site-packages/IPython/core/async_helpers.py]
-%%     [function: _run_cell, line: 2869, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
-%%     [function: run_cell, line: 2843, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
-%%     [function: run_cell, line: 537, file: /usr/lib/python3.7/site-packages/ipykernel/zmqshell.py]
-%%     [function: do_execute, line: 208, file: /usr/lib/python3.7/site-packages/ipykernel/ipkernel.py]
-%%     [function: execute_request, line: 399, file: /usr/lib/python3.7/site-packages/ipykernel/kernelbase.py]
-%%     [function: dispatch_shell, line: 233, file: /usr/lib/python3.7/site-packages/ipykernel/kernelbase.py]
-%%     [function: dispatcher, line: 283, file: /usr/lib/python3.7/site-packages/ipykernel/kernelbase.py]
-%%     [function: null_wrapper, line: 300, file: /usr/lib/python3.7/site-packages/tornado/stack_context.py]
-%%     [function: _run_callback, line: 438, file: /usr/lib/python3.7/site-packages/zmq/eventloop/zmqstream.py]
-%%     [function: _handle_recv, line: 486, file: /usr/lib/python3.7/site-packages/zmq/eventloop/zmqstream.py]
-%%     [function: _handle_events, line: 456, file: /usr/lib/python3.7/site-packages/zmq/eventloop/zmqstream.py]
-%%     [function: <lambda>, line: 542, file: /usr/lib/python3.7/site-packages/zmq/eventloop/zmqstream.py]
+%%     [function: _run_cell, line: 2874, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
+%%     [function: run_cell, line: 2848, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
+%%     [function: run_cell, line: 536, file: /usr/lib/python3.7/site-packages/ipykernel/zmqshell.py]
+%%     [function: do_execute, line: 294, file: /usr/lib/python3.7/site-packages/ipykernel/ipkernel.py]
+%%     [function: wrapper, line: 326, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
+%%     [function: execute_request, line: 534, file: /usr/lib/python3.7/site-packages/ipykernel/kernelbase.py]
+%%     [function: wrapper, line: 326, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
+%%     [function: dispatch_shell, line: 267, file: /usr/lib/python3.7/site-packages/ipykernel/kernelbase.py]
+%%     [function: wrapper, line: 326, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
+%%     [function: process_one, line: 357, file: /usr/lib/python3.7/site-packages/ipykernel/kernelbase.py]
+%%     [function: run, line: 1147, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
+%%     [function: __init__, line: 1080, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
+%%     [function: wrapper, line: 346, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
+%%     [function: dispatch_queue, line: 370, file: /usr/lib/python3.7/site-packages/ipykernel/kernelbase.py]
+%%     [function: run, line: 1147, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
+%%     [function: inner, line: 1233, file: /usr/lib/python3.7/site-packages/tornado/gen.py]
 %%     [function: null_wrapper, line: 300, file: /usr/lib/python3.7/site-packages/tornado/stack_context.py]
 %%     [function: _run_callback, line: 758, file: /usr/lib/python3.7/site-packages/tornado/ioloop.py]
 %%     [function: _run, line: 88, file: /usr/lib/python3.7/asyncio/events.py]
 %%     [function: _run_once, line: 1775, file: /usr/lib/python3.7/asyncio/base_events.py]
 %%     [function: run_forever, line: 539, file: /usr/lib/python3.7/asyncio/base_events.py]
 %%     [function: start, line: 132, file: /usr/lib/python3.7/site-packages/tornado/platform/asyncio.py]
-%%     [function: start, line: 497, file: /usr/lib/python3.7/site-packages/ipykernel/kernelapp.py]
+%%     [function: start, line: 505, file: /usr/lib/python3.7/site-packages/ipykernel/kernelapp.py]
 %%     [function: launch_instance, line: 658, file: /usr/lib/python3.7/site-packages/traitlets/config/application.py]
 %%     [function: <module>, line: 16, file: /usr/lib/python3.7/site-packages/ipykernel_launcher.py]
 %%     [function: _run_code, line: 85, file: /usr/lib/python3.7/runpy.py]
