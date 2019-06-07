@@ -1,0 +1,3 @@
+[submodule "systemspaper_experiments"]
+	path = systemspaper_experiments
+	url = https://github.com/kjetil-lye/systemspaper_experiments
