@@ -154,14 +154,14 @@ Computes the Wasserstein distance for a range of perturbations
 
         
     elif args.varying_types:
-       
+        perturbations = map(int, args.perturbations)
         filenames_per_type = {}
         
         for t in args.types:
             filenames_per_type[t] = []
-            for p in args.perturbations:
+            for p in perturbations:
                 filenames_per_type[t].append(args.basename.format(t=t,inv=p))
 
         plotWassersteinConvergenceDifferentTypes(args.name, filenames_per_type, 
                                                  resolution,
-                                                 args.perturbations)
+                                                 perturbations)
