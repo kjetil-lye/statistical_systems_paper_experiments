@@ -3,7 +3,7 @@ set -e
 
 function submit {
     bsub -n 1 -N -B -W 120:00 -R 'rusage[mem=64000]' \
-	 $1
+	 "$@"
 }
 
 function submit_resolutions {
