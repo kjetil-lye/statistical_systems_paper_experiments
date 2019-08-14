@@ -249,6 +249,6 @@ Computes the Wasserstein distance for a range of resolutions
         for t in args.types:
             filenames_per_type[t] = []
             for r in resolutions:
-                filenames_per_type[t].append(args.basename.format(t=t,r=r)))
+                filenames_per_type[t].append(args.basename.format(t=t,r=r))
 
         plotWassersteinConvergenceVaryingMethods(args.name, filenames_per_type, resolutions)
