@@ -118,7 +118,7 @@ def plotWassersteinConvergenceDifferentTypes(name, filenames, r, perturbations_i
     
     
 
-if __main__ == '__name__':
+if __name__ == '__main__':
 
     resolution = 1024
     

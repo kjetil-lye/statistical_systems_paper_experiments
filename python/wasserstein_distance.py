@@ -215,7 +215,7 @@ def plotWassersteinConvergenceVaryingMethods(name, filenames, resolutions):
     plt.title("Wasserstein convergence for %s\nfor first correlation marginal"%name)
     showAndSave('%s_scheme_wasserstein_convergence_1pt_all_components' % name)
 
-if __main__ == '__name__':
+if __name__ == '__main__':
     resolutions = [64, 128, 256, 512, 1024]
     
     import argparse
