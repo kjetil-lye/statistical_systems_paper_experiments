@@ -8,7 +8,7 @@ function submit {
 
 function submit_resolutions {
     submit \
-	 python ../python/wasserstein_distance \
+	 python ../python/wasserstein_distance.py \
 	 --basename $1 \
 	 --name $2
 }
