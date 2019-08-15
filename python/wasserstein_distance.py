@@ -89,17 +89,17 @@ def wasserstein2pt_fast(data1, data2):
     xt = np.zeros((N, 2*number_of_variables))
     distance = 0
     
-
-    points = 0.1*np.array(range(0,10))
+    number_of_integration_points = 16
+    points = np.arange(number_of_integration_points)
     for (n,x) in enumerate(points):
         for y in points:
 
             for xp in points:
                 for yp in points:
-                    i = int(x*N)
-                    j = int(y*N)
-                    ip = int(xp*N)
-                    jp = int(yp*N)
+                    i = int(x*N/number_of_integration_points)
+                    j = int(y*N/number_of_integration_points)
+                    ip = int(xp*N/number_of_integration_points)
+                    jp = int(yp*N/number_of_integration_points)
                     distance += wasserstein_point2_fast(data1, data2, i,j, ip, jp, a, b, xs, xt)
 
 
