@@ -154,7 +154,7 @@ Computes the Wasserstein distance for a range of perturbations
 
         
     elif args.varying_types:
-        perturbations = map(int, args.perturbations)
+        perturbations = list(map(int, args.perturbations))
         filenames_per_type = {}
         
         for t in args.types:
