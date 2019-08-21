@@ -48,7 +48,7 @@ def wasserstein_point2_fast(data1, data2, i, j, ip, jp, a, b, xs, xt):
     xt[:,number_of_variables:] = data2[ip, jp, :, :]
 
 
-    M = ot.dist(xs, xt, metric='euclidean')
+    M = scipy.linalg.norm(xs-xt, ord=1, axis=1)#ot.dist(xs, xt, metric='euclidean')
     G0 = ot.emd(a,b,M)
 
     return np.sum(G0*M)
@@ -67,7 +67,7 @@ def wasserstein1pt_fast(data1, data2):
         for j in range(N):
             xs = data1[i,j,:,:]
             xt = data2[i,j,:,:]
-            M = ot.dist(xs, xt, metric='euclidean')
+            M = scipy.linalg.norm(xs-xt, ord=1, axis=1)
             G0 = ot.emd(a,b,M)
 
             distance += np.sum(G0*M)
