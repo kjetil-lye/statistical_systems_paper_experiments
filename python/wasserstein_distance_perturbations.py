@@ -9,7 +9,8 @@ Created on Wed Aug 14 18:53:48 2019
 from wasserstein_distance import *
 
 
-def plotWassersteinConvergencePerturbations(name, basename, r, perturbations):
+def plotWassersteinConvergencePerturbations(name, basename, r, perturbations, norm_order=2, 
+                                   normalization='none'):
     plot_info.console_log_show(name)
     wasserstein2pterrors = []
     for (n, p) in enumerate(perturbations[:-1]):
@@ -23,16 +24,20 @@ def plotWassersteinConvergencePerturbations(name, basename, r, perturbations):
             data1[:,:,k,:] = d1
             data2[:,:,k,:] = d2
 
-        wasserstein2pterrors.append(wasserstein2pt_fast(data1, data2))
+        wasserstein2pterrors.append(wasserstein2pt_fast(data1, data2, norm_order=norm_order,
+                                                        normalization=normalization))
         print("wasserstein2pterrors=%s" % wasserstein2pterrors)
     
 
     plt.loglog(perturbations[1:], wasserstein2pterrors, '-o', basex=2, basey=2)
     plt.xlabel("Perturbation $\\epsilon$")
     plt.ylabel('$||W_1(\\nu^{2, \\Delta x, \\epsilon}, \\nu^{2,\\Delta x, \\epsilon_0})||_{L^1(D\\times D)}$')
-    plt.title("Wasserstein convergence for %s\nfor second correlation measure,\nwith respect to perturbation size\nagainst a reference solution with $\epsilon_0=%.4f$"%(name,perturbations[-1]))
-    showAndSave('%s_wasserstein_perturbation_convergence_2pt_all_components' % name)
-    
+    plt.title("Wasserstein convergence for %s\nfor second correlation measure,\nwith respect to perturbation size\nagainst a reference solution with $\epsilon_0=%.4f$\n%s\n$\\ell^{%d}$, normalization: %s"%(name,perturbations[-1], conserved_variables, norm_order, normalization))
+    if number_of_variables > 1:
+        showAndSave('%s_l_%d_%s_wasserstein_perturbation_convergence_2pt_all_components' % (name, norm_order, normalization))
+    else:
+        showAndSave('%s_l_%d_%s_wasserstein_perturbation_convergence_2pt_%s' % (name, norm_order, normalization, conserved_variables[0]))
+        
     
     
     # one point
@@ -48,19 +53,24 @@ def plotWassersteinConvergencePerturbations(name, basename, r, perturbations):
             data1[:,:,k,:] = d1
             data2[:,:,k,:] = d2
 
-        wasserstein1pterrors.append(wasserstein1pt_fast(data1, data2))
+        wasserstein1pterrors.append(wasserstein1pt_fast(data1, data2, norm_order=norm_order, normalization=normalization))
         print("wasserstein1pterrors=%s" % wasserstein1pterrors)
     
 
     plt.loglog(perturbations[1:], wasserstein1pterrors, '-o', basex=2, basey=2)
     plt.xlabel("Perturbation $\\epsilon$")
     plt.ylabel('$||W_1(\\nu^{1, \\Delta x, \\epsilon}, \\nu^{1,\\Delta x, \\epsilon_0})||_{L^1(D)}$')
-    plt.title("Wasserstein convergence for %s\nfor first correlation measure,\nwith respect to perturbation size\nagainst a reference solution with $\epsilon_0=%.4f$"%(name,perturbations[-1]))
-    showAndSave('%s_wasserstein_perturbation_convergence_1pt_all_components' % name)
-    
+    plt.title("Wasserstein convergence for %s\nfor first correlation measure,\nwith respect to perturbation size\nagainst a reference solution with $\epsilon_0=%.4f$\n%s\n$\\ell^{%d}$, normalization: %s"%(name,perturbations[-1], conserved_variables, norm_order, normalization))
+    if number_of_variables > 1:
+        showAndSave('%s_l_%d_%s_wasserstein_perturbation_convergence_1pt_all_components' % (name, norm_order, normalization))
+    else:
+        showAndSave('%s_l_%d_%s_wasserstein_perturbation_convergence_1pt_%s' % (name, norm_roder, normalization, conserved_variables[0]))
+        
     
 
-def plotWassersteinConvergenceDifferentTypes(name, filenames, r, perturbations_inverse):
+def plotWassersteinConvergenceDifferentTypes(name, filenames, r, 
+                                             perturbations_inverse, norm_order=2,
+                                             normalization='none'):
     plot_info.console_log_show(f"types {name}")
     wasserstein2pterrors = []
     types = [k for k in filenames.keys()]
@@ -77,7 +87,8 @@ def plotWassersteinConvergenceDifferentTypes(name, filenames, r, perturbations_i
             data1[:,:,k,:] = d1
             data2[:,:,k,:] = d2
 
-        wasserstein2pterrors.append(wasserstein2pt_fast(data1, data2))
+        wasserstein2pterrors.append(wasserstein2pt_fast(data1, data2, norm_order=norm_order,
+                                                        normalization=normalization))
         print("wasserstein2pterrors=%s" % wasserstein2pterrors)
     
 
@@ -85,9 +96,13 @@ def plotWassersteinConvergenceDifferentTypes(name, filenames, r, perturbations_i
     plt.xlabel("Perturbation $\\epsilon$")
     
     plt.ylabel('$||W_1(\\nu^{2, \\Delta x, \\epsilon}_{\\mathrm{%s}}, \\nu^{2,\\Delta x, \\epsilon}_{\\mathrm{%s}})||_{L^1(D\\times D)}$' % (types[0], types[1]))
-    plt.title("Wasserstein convergence for %s\nfor second correlation measure"%(name))
-    showAndSave('%s_type_comparison_wasserstein_perturbation_convergence_2pt_all_components' % name)
-    
+    plt.title(f"Wasserstein convergence for {name}\nfor second correlation measure\n{conserved_variables}\n$\\ell^{{{norm_order}}}$, normalization: {normalization}")
+
+    if number_of_variables > 1:
+        showAndSave('%s_l_%d_%s_type_comparison_wasserstein_perturbation_convergence_2pt_all_components' % (name, norm_order, normalization))
+    else:
+        showAndSave('%s_l_%d_%s_type_comparison_wasserstein_perturbation_convergence_2pt_%s' % (name, norm_order, normalization, conserved_variables[0]))
+        
     
     
     
@@ -105,7 +120,7 @@ def plotWassersteinConvergenceDifferentTypes(name, filenames, r, perturbations_i
             data1[:,:,k,:] = d1
             data2[:,:,k,:] = d2
 
-        wasserstein1pterrors.append(wasserstein1pt_fast(data1, data2))
+        wasserstein1pterrors.append(wasserstein1pt_fast(data1, data2, norm_order=norm_order, normalization=normalization))
         print("wasserstein1pterrors=%s" % wasserstein1pterrors)
     
 
@@ -113,9 +128,12 @@ def plotWassersteinConvergenceDifferentTypes(name, filenames, r, perturbations_i
     plt.xlabel("Perturbation $\\epsilon$")
     
     plt.ylabel('$||W_1(\\nu^{1, \\Delta x, \\epsilon}_{\\mathrm{%s}}, \\nu^{1,\\Delta x, \\epsilon}_{\\mathrm{%s}})||_{L^1(D)}$' % (types[0], types[1]))
-    plt.title("Wasserstein convergence for %s\nfor first correlation measure,\nwith respect to perturbation size"%(name))
-    showAndSave('%s_type_comparison_wasserstein_perturbation_convergence_1pt_all_components' % name)
-    
+    plt.title(f"Wasserstein convergence for {name}\nfor first correlation measure,\nwith respect to perturbation size\n{conserved_variables}\n$\\ell^{{{norm_order}}}$, normalization: {normalization}")
+    if number_of_variables > 1:
+        showAndSave('%s_l_%d_%s_type_comparison_wasserstein_perturbation_convergence_1pt_all_components' % (name, norm_order, normalization))
+    else:
+        showAndSave('%s_l_%d_%s_type_comparison_wasserstein_perturbation_convergence_1pt_%s' % (name, norm_order, normalization, conserved_variables[0]))
+        
     
 
 if __name__ == '__main__':
@@ -144,13 +162,31 @@ Computes the Wasserstein distance for a range of perturbations
     parser.add_argument('--types', type=str, nargs='+',
                         help='The list of types to compare for the varying_types options')
 
+    
+    parser.add_argument('--variable', type=str, default='all',
+                        help='The variable to compute convergence (rho, mx, my, E or all)')
+
+    parser.add_argument('--norm_order', type=int, default=2,
+                        help='The order of the l^p norm')
+    
+    parser.add_argument('--normalization', type=str, default='none',
+                        help="The normalization to apply to the samples. Available options: none, avg_l<p>, max_l<p>, avg_point, max_point, avg, max")
+    
+
+
     args = parser.parse_args()
+
+    if args.variable.lower() != 'all':
+        conserved_variables = [args.variable]
+        number_of_variables = 1
 
     if not args.varying_types:
         plotWassersteinConvergencePerturbations(args.name, 
-                                   args.basename,
-                                   resolution,
-                                   args.perturbations)
+                                                args.basename,
+                                                resolution,
+                                                args.perturbations,
+                                                norm_order=args.norm_order,
+                                                normalization=args.normalization)
 
         
     elif args.varying_types:
@@ -164,4 +200,6 @@ Computes the Wasserstein distance for a range of perturbations
 
         plotWassersteinConvergenceDifferentTypes(args.name, filenames_per_type, 
                                                  resolution,
-                                                 perturbations)
+                                                 perturbations,
+                                                 norm_order=args.norm_order,
+                                                normalization=args.normalization)

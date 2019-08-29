@@ -19,7 +19,7 @@ import ot
 import sys
 import scipy
 import scipy.stats
-
+import re
 
 conserved_variables = ['rho', 'mx', 'my', 'E']
 number_of_variables = len(conserved_variables)
@@ -35,25 +35,77 @@ def load(f, sample):
         
     return data
 
-def wasserstein_point2_fast(data1, data2, i, j, ip, jp, a, b, xs, xt):
+def normalize(data_at_point, all_data, normalization):
+    if normalization.lower() == 'none':
+        return data_at_point
+    elif re.search(r'avg_l\d+', normalization):
+        new_data = np.zeros_like(data_at_point)
+        p = int(re.search(r'avg_l(\d+)', normalization).group(1))
+        for component in range(all_data.shape[4]):
+            normalization_factor = np.mean((np.sum(abs(all_data[:,:,:,component])**p, axis=(0,1)),
+                                            )**(1.0/p))
+            new_data[:,component] = data_at_point[:, component] / normalization_factor
+            
+        return new_data
+    
+    elif re.search(r'max_l\d+', normalization):
+        new_data = np.zeros_like(data_at_point)
+        p = int(re.search(r'max_l(\d+)', normalization).group(1))
+        for component in range(all_data.shape[4]):
+            normalization_factor = np.max((np.sum(abs(all_data[:,:,:,component])**p, axis=(0,1)),
+                                            )**(1.0/p))
+            new_data[:,component] = data_at_point[:, component] / normalization_factor
+            
+        return new_data
+    elif normalization == 'avg_point':
+        new_data = np.zeros_like(data_at_point)
+        for component in range(all_data.shape[4]):
+            normalization = np.mean(data_at_point[:,component])
+            new_data[:,component] = data_at_point[:,component]/normalization_factor
+        return new_data
+    elif normalization == 'max_point':
+        new_data = np.zeros_like(data_at_point)
+        for component in range(all_data.shape[4]):
+            normalization = np.max(abs(data_at_point[:,component]))
+            new_data[:,component] = data_at_point[:,component]/normalization_factor
+        return new_data
+    elif normalization == 'avg':
+        new_data = np.zeros_like(data_at_point)
+        for component in range(all_data.shape[4]):
+            normalization = np.mean(abs(all_data[:,:,:,component]))
+            new_data[:,component] = data_at_point[:,component]/normalization_factor
+        return new_data
+    
+    elif normalization == 'max':
+        new_data = np.zeros_like(data_at_point)
+        for component in range(all_data.shape[4]):
+            normalization = np.max(abs(all_data[:,:,:,component]))
+            new_data[:,component] = data_at_point[:,component]/normalization_factor
+        return new_data
+    else:
+        raise Exception(f"Unknown normalization {normalization}")
+
+def wasserstein_point2_fast(data1, data2, i, j, ip, jp, a, b, xs, xt, norm_order=2, 
+                            normalization='none'):
     """
     Computes the Wasserstein distance for a single point in the spatain domain
     """
     
+    
 
-    xs[:,:number_of_variables] = data1[i,j,:,:]
-    xs[:,number_of_variables:] = data1[ip, jp, :,:]
+    xs[:,:number_of_variables] = normalize(data1[i,j,:,:], data1, normalization)
+    xs[:,number_of_variables:] = normalize(data1[ip, jp, :,:], data1, normalization)
 
-    xt[:,:number_of_variables] = data2[i,j, :, :]
-    xt[:,number_of_variables:] = data2[ip, jp, :, :]
+    xt[:,:number_of_variables] = normalize(data2[i,j, :, :], data2, normalization)
+    xt[:,number_of_variables:] = normalize(data2[ip, jp, :, :], data2, normalization)
 
 
-    M = scipy.linalg.norm(xs-xt, ord=1, axis=1)#ot.dist(xs, xt, metric='euclidean')
+    M = scipy.linalg.norm(xs-xt, ord=norm_order, axis=1)#ot.dist(xs, xt, metric='euclidean')
     G0 = ot.emd(a,b,M)
 
     return np.sum(G0*M)
 
-def wasserstein1pt_fast(data1, data2):
+def wasserstein1pt_fast(data1, data2, norm_order=2, normalization='none'):
     """
     Approximate the L^1(W_1) distance (||W_1(nu1, nu2)||_{L^1})
     """
@@ -65,9 +117,9 @@ def wasserstein1pt_fast(data1, data2):
     
     for i in range(N):
         for j in range(N):
-            xs = data1[i,j,:,:]
-            xt = data2[i,j,:,:]
-            M = scipy.linalg.norm(xs-xt, ord=1, axis=1)
+            xs = normalize(data1[i,j,:,:], data1, normalization)
+            xt = normalize(data2[i,j,:,:], data2, normalization)
+            M = scipy.linalg.norm(xs-xt, ord=norm_order, axis=1)
             G0 = ot.emd(a,b,M)
 
             distance += np.sum(G0*M)
@@ -78,7 +130,7 @@ def wasserstein1pt_fast(data1, data2):
 
 
 
-def wasserstein2pt_fast(data1, data2):
+def wasserstein2pt_fast(data1, data2, norm_order=2, normalization='none'):
     """
     Approximate the L^1(W_1) distance (||W_1(nu1, nu2)||_{L^1})
     """
@@ -100,7 +152,7 @@ def wasserstein2pt_fast(data1, data2):
                     j = int(y*N/number_of_integration_points)
                     ip = int(xp*N/number_of_integration_points)
                     jp = int(yp*N/number_of_integration_points)
-                    distance += wasserstein_point2_fast(data1, data2, i,j, ip, jp, a, b, xs, xt)
+                    distance += wasserstein_point2_fast(data1, data2, i,j, ip, jp, a, b, xs, xt, norm_order=norm_order, normalization=normalization)
 
 
     
@@ -108,7 +160,7 @@ def wasserstein2pt_fast(data1, data2):
 
 
 
-def plotWassersteinConvergence(name, basename, resolutions):
+def plotWassersteinConvergence(name, basename, resolutions, norm_order=2, normalization='none'):
     plot_info.console_log_show(f"types {name}")
     wasserstein2pterrors = []
     for r in resolutions[1:]:
@@ -122,7 +174,7 @@ def plotWassersteinConvergence(name, basename, resolutions):
             data1[:,:,k,:] = d1
             data2[:,:,k,:] = d2
 
-        wasserstein2pterrors.append(wasserstein2pt_fast(data1, data2))
+        wasserstein2pterrors.append(wasserstein2pt_fast(data1, data2, norm_order=norm_order, normalization=normalization))
         print("wasserstein2pterrors=%s" % wasserstein2pterrors)
     
 
@@ -130,9 +182,12 @@ def plotWassersteinConvergence(name, basename, resolutions):
     plt.xlabel("Resolution")
     plt.xticks(resolutions[1:], ['${r} \\times {r}$'.format(r=r) for r in resolutions[1:]])
     plt.ylabel('$||W_1(\\nu^{2, \\Delta x}, \\nu^{2,\\Delta x/2})||_{L^1(D\\times D)}$')
-    plt.title("Wasserstein convergence for %s\nfor second correlation marginal"%name)
-    showAndSave('%s_wasserstein_convergence_2pt_all_components' % name)
-    
+    plt.title(f"Wasserstein convergence for {name}\nfor second correlation marginal\n{conserved_variables}\n$\\ell^{{{norm_order}}}$, normalization: {normalization}")
+    if number_of_variables > 1:
+        showAndSave('%s_l_%d_%s_wasserstein_convergence_2pt_all_components' % (name, norm_order, normalization))
+    else:
+        showAndSave('%s_l_%d_%s_wasserstein_convergence_2pt_%s' % (name, norm_order, normalization, conserved_variables[0]))
+        
     
     
     wasserstein1pterrors = []
@@ -147,7 +202,7 @@ def plotWassersteinConvergence(name, basename, resolutions):
             data1[:,:,k,:] = d1
             data2[:,:,k,:] = d2
 
-        wasserstein1pterrors.append(wasserstein1pt_fast(data1, data2))
+        wasserstein1pterrors.append(wasserstein1pt_fast(data1, data2, norm_order=norm_order, normalization=normalization))
         print("wasserstein1pterrors=%s" % wasserstein1pterrors)
     
 
@@ -155,13 +210,17 @@ def plotWassersteinConvergence(name, basename, resolutions):
     plt.xlabel("Resolution")
     plt.xticks(resolutions[1:], ['${r} \\times {r}$'.format(r=r) for r in resolutions[1:]])
     plt.ylabel('$||W_1(\\nu^{1, \\Delta x}, \\nu^{1, \\Delta x/2})||_{L^1(D)}$')
-    plt.title("Wasserstein convergence for %s\nfor first correlation marginal"%name)
-    showAndSave('%s_wasserstein_convergence_1pt_all_components' % name)
-    
+    plt.title(f"Wasserstein convergence for {name}\nfor first correlation marginal\n{conserved_variables}\n$\\ell^{{{norm_order}}}$, normalization: {normalization}")
+
+    if number_of_variables > 1:
+        showAndSave('%s_l_%d_%s_wasserstein_convergence_1pt_all_components' % (name, norm_order, normalization))
+    else:
+        showAndSave('%s_l_%d_%s_wasserstein_convergence_1pt_%s' % (name, norm_order, normalization, conserved_variables[0]))
+        
     
 
 
-def plotWassersteinConvergenceVaryingMethods(name, filenames, resolutions):
+def plotWassersteinConvergenceVaryingMethods(name, filenames, resolutions, norm_order=2, normalization='none'):
     plot_info.console_log_show(f"methods {name}")
     # two point
     wasserstein2pterrors = []
@@ -177,7 +236,7 @@ def plotWassersteinConvergenceVaryingMethods(name, filenames, resolutions):
             data1[:,:,k,:] = d1
             data2[:,:,k,:] = d2
 
-        wasserstein2pterrors.append(wasserstein2pt_fast(data1, data2))
+        wasserstein2pterrors.append(wasserstein2pt_fast(data1, data2, norm_order=norm_order, normalization=normalization))
         print("wasserstein2pterrors=%s" % wasserstein2pterrors)
     
 
@@ -185,9 +244,12 @@ def plotWassersteinConvergenceVaryingMethods(name, filenames, resolutions):
     plt.xlabel("Resolution")
     plt.xticks(resolutions, ['${r} \\times {r}$'.format(r=r) for r in resolutions])
     plt.ylabel('$||W_1(\\nu^{2, \\Delta x}_{\\mathrm{%s}}, \\nu^{2,\\Delta x}_{\\mathrm{%s}})||_{L^1(D\\times D)}$' %(types[0], types[1]))
-    plt.title("Wasserstein convergence for %s\nfor second correlation marginal"%name)
-    showAndSave('%s_scheme_wasserstein_convergence_2pt_all_components' % name)
-    
+    plt.title(f"Wasserstein convergence for {name}\nfor second correlation marginal\n{conserved_variables}\n$\\ell^{{{norm_order}}}$, normalization: {normalization}")
+
+    if number_of_variables > 1:
+        showAndSave('%s_l_%d_%s_scheme_wasserstein_convergence_2pt_all_components' % (name, norm_order, normalization))
+    else:
+        showAndSave('%s_l_%d_%s_scheme_wasserstein_convergence_2pt_%s' % (name, norm_order, normalization, conserved_variables[0]))
     # one point
     wasserstein1pterrors = []
     types = [t for t in filenames.keys()]
@@ -204,7 +266,7 @@ def plotWassersteinConvergenceVaryingMethods(name, filenames, resolutions):
             data1[:,:,k,:] = d1
             data2[:,:,k,:] = d2
 
-        wasserstein1pterrors.append(wasserstein1pt_fast(data1, data2))
+        wasserstein1pterrors.append(wasserstein1pt_fast(data1, data2, norm_order=norm_order, normalization=normalization))
         print("wasserstein1pterrors=%s" % wasserstein1pterrors)
     
 
@@ -212,8 +274,11 @@ def plotWassersteinConvergenceVaryingMethods(name, filenames, resolutions):
     plt.xlabel("Resolution")
     plt.xticks(resolutions, ['${r} \\times {r}$'.format(r=r) for r in resolutions])
     plt.ylabel('$||W_1(\\nu^{1, \\Delta x}_{\\mathrm{%s}}, \\nu^{1,\\Delta x/2}_{\\mathrm{%s}})||_{L^1(D)}$' %(types[0], types[1]))
-    plt.title("Wasserstein convergence for %s\nfor first correlation marginal"%name)
-    showAndSave('%s_scheme_wasserstein_convergence_1pt_all_components' % name)
+    plt.title(f"Wasserstein convergence for {name}\nfor first correlation marginal\n{conserved_variables}\n$\\ell^{{{norm_order}}}$, normalization: {normalization}")
+    if number_of_variables > 1:
+        showAndSave('%s_l_%d_%s_scheme_wasserstein_convergence_1pt_all_components' % (name, norm_order, normalization))
+    else:
+        showAndSave('%s_l_%d_%s_scheme_wasserstein_convergence_1pt_%s' % (name, norm_order, normalization, conserved_variables[0]))
 
 if __name__ == '__main__':
     resolutions = [64, 128, 256, 512, 1024]
@@ -237,10 +302,26 @@ Computes the Wasserstein distance for a range of resolutions
     parser.add_argument('--types', type=str, nargs='+',
                         help='The list of types to compare for the varying_method options')
 
+    parser.add_argument('--variable', type=str, default='all',
+                        help='The variable to compute convergence (rho, mx, my, E or all)')
+
+    parser.add_argument('--norm_order', type=int, default=2,
+                        help='The order of the l^p norm for the distance on R^(kN)')
+
+    parser.add_argument('--normalization', type=str, default='none',
+                        help="The normalization to apply to the samples. Available options: none, avg_l<p>, max_l<p>, avg_point, max_point, avg, max")
+    
+
     args = parser.parse_args()
 
+    if args.variable.lower() != 'all':
+        conserved_variables = [args.variable]
+        number_of_variables = 1
+
     if not args.varying_methods:
-        plotWassersteinConvergence(args.name, args.basename, resolutions)
+        plotWassersteinConvergence(args.name, args.basename, resolutions, 
+                                   norm_order=args.norm_order, 
+                                   normalization=args.normalization)
         
     elif args.varying_methods:
         
@@ -251,4 +332,6 @@ Computes the Wasserstein distance for a range of resolutions
             for r in resolutions:
                 filenames_per_type[t].append(args.basename.format(t=t,r=r))
 
-        plotWassersteinConvergenceVaryingMethods(args.name, filenames_per_type, resolutions)
+        plotWassersteinConvergenceVaryingMethods(args.name, filenames_per_type, 
+                                                 resolutions, norm_order=norm_order,
+                                                 normalization=args.normalization)
