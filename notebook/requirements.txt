@@ -30,7 +30,7 @@ mistune==0.8.4
 nbconvert==5.5.0
 nbformat==4.4.0
 netCDF4==1.5.1.2
-notebook==5.7.8
+notebook==6.4.10
 numpy==1.16.3
 pandocfilters==1.4.2
 parso==0.4.0
