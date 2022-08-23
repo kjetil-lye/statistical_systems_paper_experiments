@@ -27,7 +27,7 @@ MarkupSafe==1.1.1
 matplotlib==3.1.0
 matplotlib2tikz==0.7.4
 mistune==0.8.4
-nbconvert==5.5.0
+nbconvert==6.5.1
 nbformat==4.4.0
 netCDF4==1.5.1.2
 notebook==5.7.8
